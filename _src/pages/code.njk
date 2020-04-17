@@ -5,7 +5,17 @@ metaTitle: 'Code | ovl'
 templateClass: 'tmpl-code'
 ---
 
-
-<main id="#main" tabindex="-1">
+<main id="#main" tabindex="-1" style="font-family: monospace">
   <h1>Code</h1>
+  <p>Last Login: {{ site.buildTime }}</p>
+  {% set terminalPath = '~/dev/' %}
+  {% set command = 'show-projects --verbose --directories' %}
+  {% include 'components/code/terminal-decorator.njk' %}
+  <ol>
+    {% for project in code.projects %}
+      <li>
+        {% include 'components/code/card.njk' %}
+      </li>
+    {% endfor %}
+  </ol>
 </main>

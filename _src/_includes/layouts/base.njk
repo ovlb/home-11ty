@@ -10,17 +10,7 @@
     {% metaRobots %}
     <link rel="stylesheet" href="/main.css">
 
-    <!-- open graph -->
-
-    {% set siteUrl = site.baseUrl + '/' + locale + '/' %}
-
-    <link rel="canonical" href="{{ siteUrl }}"/>
-
-    {% for siteLocale in site.supportedLanguages %}
-      {% if siteLocale.code != locale %}
-        <link rel="alternate" hreflang="{{ siteLocale.code }}" href="{{ site.baseUrl }}/{{ siteLocale.code }}/"/>
-      {% endif %}
-    {% endfor %}
+    <link rel="canonical" href="https://www.ovl.design"/>
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ metaTitle }}">
