@@ -26,16 +26,4 @@ module.exports = async function ({ type, order = '-sys.createdAt' }) {
   } catch (e) {
     throw new Error(e.message)
   }
-
-  // console.log(includes)
-
-  /* const content = items[0].fields
-  const blocks = content.blocks.map((block) => {
-    return block.fields
-  })
-
-  return {
-    content,
-    blocks
-  } */
 }
