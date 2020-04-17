@@ -12,7 +12,7 @@ module.exports = {
     { url: 'https://talks.ovl.design/', text: 'Talks' }
   ],
   metaImage:
-    'https://images.ctfassets.net/geeqsxh5by4r/lo2pS2xflaqywEoMdnMOG/e705b18fa856ab43789dd3c2f1ba80f9/ctc-og-image-001.png',
+    'hhttps://images.ctfassets.net/0qq78o7muy2j/41AVLQd3q0oEaQKwcW0Ck2/1adc1e0fc0c7525b4f25b45570847396/ovl-og-image-generic.png',
   en: {
     translations: {
       skip_to_content: 'Jump to main content',
