@@ -5,7 +5,9 @@ templateClass: 'tmpl-single-post'
 
 <main id="main">
   <header class="post-header">
-    <p class="aside">{{ post.date | displayDate }}</p>
+    <p class="aside">
+      {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
+    </p>
     <h1>{{ post.title }}</h1>
     {% if post.contentIntro %}
       <p class="text__intro">
