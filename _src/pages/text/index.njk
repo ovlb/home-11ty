@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+permalink: '/text/'
+metaTitle: 'Text | ovl'
+templateClass: 'tmpl-article-list'
+---
+
+
+<main id="#main" tabindex="-1">
+  <h1>Scribbles on digital paper</h1>
+  <ol>
+    {% for post in articles.posts %}
+      {% set articleLink = '/text/' + post.slug %}
+      {% set linkClass = 'article-card__link' %}
+
+      {% if post.isInternal === false %}
+        {% set articleLink = post.externalPost.fields.link %}
+        {% set linkClass = linkClass + ' -external' %}
+      {% endif %}
+
+      <li>
+        <article>
+          <p class="aside">{{ post.date | displayDate }}</p>
+          <h2><a href="{{ articleLink }}" class="{{ linkClass }}">{{ post.title }}</a></h2>
+          <p>{{ post.intro }}</p>
+          {% if post.isInternal === false %}
+            <p class="aside">Published at {{ post.externalPost.fields.medium }}</p>
+          {% endif %}
+        </article>
+      </li>
+    {% endfor %}
+  </ol>
+</main>

@@ -57,6 +57,13 @@ module.exports = function (config) {
     console.log(val)
   })
 
+  config.addFilter('displayDate', function (date) {
+    return new Date(date).toLocaleDateString('en-UK', {
+      month: 'long',
+      year: 'numeric'
+    })
+  })
+
   config.addFilter('md', (raw) => {
     const result = mdIt.render(raw)
 
