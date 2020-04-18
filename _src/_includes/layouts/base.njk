@@ -45,24 +45,27 @@
     {{ content | safe }}
     {# {% include "partials/footer.njk" %} #}
     <script>
-      var $main = document.getElementById('#main')
-      var $skipLink = document.querySelector('.js-skip-link')
-      var $footer = document.querySelector('.js-site-footer')
-      // reset tabindex if script is running
-      $main.removeAttribute('tabindex')
-
-      $skipLink.addEventListener('click', function (evt) {
-        evt.preventDefault()
-
-        $main.setAttribute('tabindex', '0')
-        $main.focus()
+      window.addEventListener('DOMContentLoaded', (event) => {
+        var $main = document.getElementById('main')
+        var $skipLink = document.querySelector('.js-skip-link')
+        var $footer = document.querySelector('.js-site-footer')
+        // reset tabindex if script is running
         $main.removeAttribute('tabindex')
-      })
 
-      // as the footer is statically positioned, we need to ensure it becomes visible if focus moves inside of it
-      $footer.addEventListener('focusin', function () {
-        $footer.scrollIntoView()
-      })
+        $skipLink.addEventListener('click', function (evt) {
+          evt.preventDefault()
+
+          $main.setAttribute('tabindex', '0')
+          $main.focus()
+          $main.removeAttribute('tabindex')
+        })
+
+        // as the footer is statically positioned, we need to ensure it becomes visible if focus moves inside of it
+        if (!$footer) return;
+        $footer.addEventListener('focusin', function () {
+          $footer.scrollIntoView()
+        })
+      });
     </script>
   </body>
 </html>
