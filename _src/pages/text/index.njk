@@ -10,18 +10,17 @@ templateClass: 'tmpl-article-list'
   <h1>Scribbles on digital paper</h1>
   <ol>
     {% for post in articles.posts %}
-      {% set articleLink = '/text/' + post.slug %}
+      {{ post.permalink | debug }}
       {% set linkClass = 'article-card__link' %}
 
       {% if post.isInternal === false %}
-        {% set articleLink = post.externalPost.fields.link %}
         {% set linkClass = linkClass + ' -external' %}
       {% endif %}
 
       <li>
         <article>
           <p class="aside">{{ post.date | displayDate }}</p>
-          <h2><a href="{{ articleLink }}" class="{{ linkClass }}">{{ post.title }}</a></h2>
+          <h2><a href="{{ post.permalink }}" class="{{ linkClass }}">{{ post.title }}</a></h2>
           <p>{{ post.intro }}</p>
           {% if post.isInternal === false %}
             <p class="aside">Published at {{ post.externalPost.fields.medium }}</p>
