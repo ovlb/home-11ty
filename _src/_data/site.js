@@ -3,6 +3,8 @@ const { version } = require('../../package.json')
 
 module.exports = {
   locale: 'en',
+  title: 'ovl',
+  description: 'code & design',
   version,
   buildTime: new Date(),
   baseUrl: process.env.BASE_URL || 'https://11ty.owlish.dev',

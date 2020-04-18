@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="{{ site.locale }}">
+  {% set metaTitle = site.title + ' « ' + site.description %}
+  {% if title %}
+    {% set metaTitle = title + ' | ' + site.title %}
+  {% endif %}
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="/assets/img/uzh_shortcut_icon_114.png" type="image/png"/>
     <title>{{ metaTitle }}</title>
+
     <meta name="description" content="{{ metaDescription }}">
     {% metaRobots %}
     <link rel="stylesheet" href="/main.css">
