@@ -1,8 +1,14 @@
 require('dotenv').config()
+const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const anchor = require('markdown-it-anchor')
+const prism = require('markdown-it-prism')
 
 const mdIt = require('markdown-it')({
   html: true
 })
+mdIt.use(anchor)
+mdIt.use(prism)
+
 const CleanCSS = require('clean-css')
 
 const cCSS = new CleanCSS()
@@ -52,6 +58,8 @@ function makeImageString(url, { width, height, fit, f }) {
 module.exports = function (config) {
   config.addPassthroughCopy('assets/img')
   config.addPassthroughCopy('assets/sitemap.xml')
+
+  config.addPlugin(syntaxHighlight)
 
   config.addFilter('debug', (val) => {
     console.log(val)
@@ -138,7 +146,7 @@ module.exports = function (config) {
   })
 
   return {
-    templateFormats: ['liquid', 'md', 'njk', 'html'],
+    templateFormats: ['liquid', 'md', 'njk', 'js'],
     // dataTemplateEngine: false,
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'liquid',

@@ -1,0 +1,10 @@
+---
+pagination:
+  data: articles.ownPosts
+  size: 1
+  alias: post
+layout: 'layouts/post.njk'
+permalink: '/text/{{ post.slug }}/'
+---
+
+{{ post.content | md | safe if post.content else "Post content not found" }}
