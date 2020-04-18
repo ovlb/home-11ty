@@ -1,8 +1,6 @@
 ---
-layout: layouts/base.njk
+layout: layouts/posts.njk
 permalink: '/text/'
-title: 'Text'
-templateClass: 'tmpl-article-list'
 ---
 
 
@@ -10,7 +8,6 @@ templateClass: 'tmpl-article-list'
   <h1>Scribbles on digital paper</h1>
   <ol>
     {% for post in articles.posts %}
-      {{ post.permalink | debug }}
       {% set linkClass = 'article-card__link' %}
 
       {% if post.isInternal === false %}

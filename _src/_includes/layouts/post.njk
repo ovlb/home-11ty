@@ -1,19 +1,21 @@
----
-layout: layouts/base.njk
-templateClass: 'tmpl-single-post'
----
+{% extends 'layouts/base.njk' %}
 
-<main id="main" tabindex="-1">
-  <header class="post-header">
-    <p class="aside">
-      {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
-    </p>
-    <h1>{{ post.title }}</h1>
-    {% if post.contentIntro %}
-      <p class="text__intro">
-        {{ post.contentIntro | md | safe }}
+{% set templateClass = 'tmpl-single-post' %}
+{% set title = post.title %}
+
+{% block content %}
+  <main id="main" tabindex="-1">
+    <header class="post-header">
+      <p class="aside">
+        {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
       </p>
-    {% endif %}
-  </header>
-  {{ content | safe }}
-</main>
+      <h1>{{ post.title }}</h1>
+      {% if post.contentIntro %}
+        <p class="text__intro">
+          {{ post.contentIntro | md | safe }}
+        </p>
+      {% endif %}
+    </header>
+    {{ content | safe }}
+  </main>
+{% endblock %}

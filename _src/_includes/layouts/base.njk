@@ -47,7 +47,8 @@
     {% if hideSiteHeader !== true %}
       {% include "components/global/site-header.njk" %}
     {% endif %}
-    {{ content | safe }}
+    {% block content %}
+    {% endblock %}
     {# {% include "partials/footer.njk" %} #}
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
