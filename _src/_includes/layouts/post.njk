@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: 'tmpl-single-post'
 ---
 
-<main id="main">
+<main id="main" tabindex="-1">
   <header class="post-header">
     <p class="aside">
       {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
