@@ -4,8 +4,8 @@
 {% set title = post.title %}
 
 {% block content %}
-  <main id="main" tabindex="-1">
-    <header class="post-header">
+  <main id="main text" tabindex="-1">
+    <header class="text__header">
       <p class="aside">
         {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
       </p>
@@ -17,5 +17,10 @@
       {% endif %}
     </header>
     {{ content | safe }}
+    <section role="section" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
+      <h2 id="pgntn-hdln">Other things I’ve written</h2>
+      {% paginationItem 'previous', pagination.href.previous, articles.ownPosts %}
+      {% paginationItem 'next', pagination.href.next, articles.ownPosts %}
+    </section>
   </main>
 {% endblock %}
