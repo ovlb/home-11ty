@@ -1,0 +1,26 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  margin: 0;
+}
+
+::selection {
+  background-color: var(--clr-accent);
+  color: var(--clr-bg);
+}
+
+:focus {
+  outline: 2px dotted var(--clr-accent);
+}
+/*
+:focus:not(:focus-visible) {
+  outline: none;
+} */
+
+:focus-visible {
+  outline: 2px dotted var(--clr-accent);
+}

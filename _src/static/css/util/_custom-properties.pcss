@@ -1,0 +1,60 @@
+:root {
+  --fonts-main: 'Bridge Text', 'Times New Roman', serif;
+  --fonts-headline: 'Bridge Head', 'Times New Roman', serif;
+  --fonts-secondary: 'LautsprecherDJR', cursive;
+  --fonts-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+
+  /* Values based on http://www.modularscale.com/?1&em&1.2 */
+  --type-very-small: 0.694rem;
+  --type-small: 0.833rem;
+  --type-base: 1rem;
+  --type-medium: 1.2rem;
+  --type-large: 1.728rem;
+  --type-xlarge: 2.488rem;
+  --type-splash: 3.583rem;
+
+  --layout-header-height: 3.75rem;
+
+  --clr-main: #b00000;
+  --clr-main-darker: #d23838;
+  --clr-main-light: #ff4a4a;
+  --clr-main-dark: #7d0000;
+  --clr-light: #f8f2e3;
+  --clr-dark: #0e0e0e;
+  --clr-dark-lighter: #161616;
+  --clr-dark-light: #685d5d;
+  --clr-light-dark: #cdc9bd;
+
+  --clr-bg: var(--clr-light);
+  --clr-fg: var(--clr-dark);
+  --clr-accent: var(--clr-main);
+  --clr-accent-dark: var(--clr-main-dark);
+  --clr-accent-light: var(--clr-main-light);
+  --clr-decent: var(--clr-dark-light);
+
+  --layout-fleuron: url('/img/icons/floral-heart-dark-red.svg');
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-user-theme='light']) {
+    --clr-fg: var(--clr-light);
+    --clr-bg: var(--clr-dark-lighter);
+    --clr-accent: var(--clr-main-light);
+    --clr-accent-dark: var(--clr-main-darker);
+    --clr-accent-light: var(--clr-main-dark);
+    --clr-decent: var(--clr-light-dark);
+
+    --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+  }
+}
+
+:root[data-user-theme='dark'] {
+  --clr-fg: var(--clr-light);
+  --clr-bg: var(--clr-dark-lighter);
+  --clr-accent: var(--clr-main-light);
+  --clr-accent-dark: var(--clr-main-darker);
+  --clr-accent-light: var(--clr-main-dark);
+  --clr-decent: var(--clr-light-dark);
+
+  --layout-fleuron: url('/img/icons/floral-heart-light-red.svg');
+}

@@ -2,6 +2,7 @@ require('dotenv').config()
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const anchor = require('markdown-it-anchor')
 const prism = require('markdown-it-prism')
+const STATIC_FOLDERS = require('./_helper/paths')
 
 const mdIt = require('markdown-it')({
   html: true
@@ -161,13 +162,16 @@ module.exports = function (config) {
 
       if (!fullItemInformation) return ''
 
-      return `
-      <div class="pagination-navigation__section">
+      return `<div class="pagination-navigation__section">
         <h3 class="pagination-navigation__sub-headline">${infos.headline}</h3>
         <a class="pagination-navigation__link ${infos.class}" href="${paginationLink}">${fullItemInformation.title}</a>
       </div>`
     }
   )
+
+  config.addWatchTarget(`./${STATIC_FOLDERS.css}**/*`)
+
+  config.addPassthroughCopy({ [`./${STATIC_FOLDERS.img}`]: '/img' })
 
   return {
     templateFormats: ['liquid', 'md', 'njk', 'js'],

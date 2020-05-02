@@ -1,0 +1,21 @@
+.tmpl-home {
+  background-color: var(--clr-main);
+  color: var(--clr-light);
+  font-size: var(--type-medium);
+  min-height: 100vh;
+  width: 100vw;
+
+  & p {
+    margin-bottom: space(half, relative);
+    text-indent: 0;
+  }
+
+  & a {
+    color: currentColor;
+  }
+
+  ::selection {
+    background-color: var(--clr-fg);
+    color: var(--clr-accent);
+  }
+}
