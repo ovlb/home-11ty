@@ -1,12 +1,18 @@
 ---
-layout: layouts/posts.njk
+layout: layouts/base.njk
 permalink: '/text/'
+templateClass: 'tmpl-article-list'
+title: 'Text'
+pageCSS: 'text'
 ---
 
 
 <main id="main" class="homepage-content" tabindex="-1">
-  <h1 class="main-headline">Scribbles on digital paper</h1>
-  <ol>
+  <header class="archive-header u-floral-heart-gradient">
+    <h1 class="main-headline">Scribbles on digital paper</h1>
+
+  </header>
+  <ol class="article-list" role="list">
     {% for post in articles.posts %}
       {% set linkClass = 'article-card__link' %}
 
@@ -15,12 +21,12 @@ permalink: '/text/'
       {% endif %}
 
       <li>
-        <article>
-          <p class="aside">{{ post.date | displayDate }}</p>
-          <h2><a href="{{ post.permalink }}" class="{{ linkClass }}">{{ post.title }}</a></h2>
+        <article class="article-card">
+          <p class="type-is-aside">{{ post.date | displayDate }}</p>
+          <h2 class="article-card__headline"><a href="{{ post.permalink }}" class="{{ linkClass }}">{{ post.title }}</a></h2>
           <p>{{ post.intro }}</p>
           {% if post.isInternal === false %}
-            <p class="aside">Published at {{ post.externalPost.fields.medium }}</p>
+            <p class="type-is-aside">Published at {{ post.externalPost.fields.medium }}</p>
           {% endif %}
         </article>
       </li>

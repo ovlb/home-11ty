@@ -11,4 +11,5 @@
 @import './organisms/_site-header.pcss';
 @import './organisms/_nav.pcss';
 
+@import './util/_visual.pcss';
 @import './util/_accessibility.pcss';
