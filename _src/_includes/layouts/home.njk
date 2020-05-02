@@ -1,10 +1,11 @@
 {% extends 'layouts/base.njk' %}
 
 {% set templateClass = 'tmpl-home' %}
+{% set pageCSS = home %}
 
-{% block pageCSS %}
+{# {% block pageCSS %}
   <style>{{ css.home | safe }}</style>
-{% endblock %}
+{% endblock %} #}
 
 {% block content %}
   {{ content | safe }}

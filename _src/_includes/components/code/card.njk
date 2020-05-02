@@ -14,7 +14,7 @@
   <div class="terminal-row">
     {% set command = baseCommand + ' $LINKS' %}
     {% include './terminal-decorator.njk' %}
-    <ul class="icon-list code-card__icons" aria-label="Detail links {{ project.title }}">
+    <ul class="icon-list code-card__icons" aria-label="Detail links {{ project.title }}" role="list">
       <li class="icon-list__item">
         <a
           href="{{ project.website }}"

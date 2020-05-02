@@ -1,0 +1,34 @@
+.site-nav {
+  align-items: center;
+  display: flex;
+}
+
+.site-nav__item {
+  font-size: 80%;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: transform 0.2s ease-out;
+  word-spacing: 0.05em;
+  z-index: 1;
+
+  @supports (font-variant-caps: all-small-caps) {
+    font-size: inherit;
+    font-variant-caps: all-small-caps;
+    text-transform: none;
+  }
+
+  &:hover,
+  &:focus,
+  &.-is-active {
+    transform: skewY(-7deg);
+  }
+
+  &.-is-active {
+    font-weight: bold;
+  }
+
+  & + & {
+    margin-left: 1em;
+  }
+}

@@ -3,15 +3,18 @@ layout: layouts/base.njk
 permalink: '/code/'
 title: 'Code'
 templateClass: 'tmpl-code'
+pageCSS: code
 ---
 
-<main id="main" tabindex="-1" style="font-family: monospace">
-  <h1>Code</h1>
-  <p>Last Login: {{ site.buildTime }}</p>
-  {% set terminalPath = '~/dev/' %}
-  {% set command = 'show-projects --verbose --directories' %}
-  {% include 'components/code/terminal-decorator.njk' %}
-  <ol>
+<main id="main" class="content-code" tabindex="-1">
+  <h1 class="u-is-visually-hidden">Code</h1>
+  <p>{{ site.buildTime | terminalLogin }}</p>
+  <div class="terminal-row content-code__intro">
+    {% set terminalPath = '~/dev/' %}
+    {% set command = 'show-projects --verbose --directories' %}
+    {% include 'components/code/terminal-decorator.njk' %}
+  </div>
+  <ol class="code-list" role="list">
     {% for project in code.projects %}
       <li>
         {% include 'components/code/card.njk' %}

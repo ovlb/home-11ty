@@ -6,3 +6,18 @@ a {
     text-decoration: none;
   }
 }
+
+.skip-link {
+  background-color: var(--clr-bg);
+  color: var(--clr-accent);
+  padding: space(full, relative);
+  position: absolute;
+  transform: translate(-500%);
+  transition: transform 0.2s ease-out;
+  top: 0;
+  left: 0;
+
+  &:focus {
+    transform: translate(0);
+  }
+}

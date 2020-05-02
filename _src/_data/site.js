@@ -9,6 +9,7 @@ module.exports = {
   buildTime: new Date(),
   baseUrl: process.env.BASE_URL || 'https://11ty.owlish.dev',
   navItems: [
+    { url: '/', text: 'Home' },
     { url: '/code/', text: 'Code' },
     { url: '/text/', text: 'Text' },
     { url: 'https://talks.ovl.design/', text: 'Talks' }
