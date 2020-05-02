@@ -2,6 +2,10 @@
 
 {% set templateClass = 'tmpl-home' %}
 
+{% block pageCSS %}
+  <style>{{ css.home | safe }}</style>
+{% endblock %}
+
 {% block content %}
   {{ content | safe }}
 {% endblock %}
