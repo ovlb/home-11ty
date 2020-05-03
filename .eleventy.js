@@ -90,9 +90,9 @@ module.exports = function (config) {
   })
 
   config.addFilter('md', (raw) => {
-    const result = mdIt.render(raw)
+    return mdIt.render(raw)
 
-    return `<div class="parsed">${result}</div>`
+    // return `<div class="parsed">${result}</div>`
   })
 
   config.addFilter('randomNumber', ({ min, max }) => getRandomInt(min, max))

@@ -4,7 +4,8 @@ const partials = {
   code: 'code.css',
   home: 'home.css',
   main: 'main.css',
-  text: 'text.css'
+  text: 'text.css',
+  textDetail: 'text-detail.css'
 }
 
 module.exports = compileCss(partials)

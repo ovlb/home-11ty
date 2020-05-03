@@ -1,22 +1,25 @@
 {% extends 'layouts/base.njk' %}
 
-{% set templateClass = 'tmpl-single-post' %}
 {% set title = post.title %}
+{% set usesBlock = true %}
 
 {% block content %}
   <main id="main" class="text" tabindex="-1">
     <header class="text__header">
-      <p class="aside">
+      <p class="type-is-aside">
         {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
       </p>
       <h1 class="main-headline">{{ post.title }}</h1>
       {% if post.contentIntro %}
         <p class="text__intro">
-          {{ post.contentIntro | md | safe }}
+          {{ post.contentIntro }}
         </p>
       {% endif %}
     </header>
-    {{ content | safe }}
+    <picture class="text__hero-image"></picture>
+    <div class="text__body">
+      {{ content | safe }}
+    </div>
     <section role="section" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
       <h2 id="pgntn-hdln">Other things I’ve written</h2>
       {% paginationItem 'previous', pagination.href.previous, articles.ownPosts %}

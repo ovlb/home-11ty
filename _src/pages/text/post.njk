@@ -5,6 +5,8 @@ pagination:
   alias: post
 layout: 'layouts/post.njk'
 permalink: '/text/{{ post.slug }}/'
+pageCSS: 'textDetail'
+templateClass: 'tmpl-single-post'
 ---
 
 {{ post.content | md | safe if post.content else "Post content not found" }}
