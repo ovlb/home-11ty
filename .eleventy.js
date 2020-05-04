@@ -34,22 +34,21 @@ function getRandomInt(min, max) {
  * @param {Number} { width, height }
  * @returns
  */
-function makeImageString(url, { width, height, fit, f }) {
-  const params = new Map([
+function makeImageString(url, { width, height }, options) {
+  const defaults = new Map([
     ['fm', 'jpg'],
-    ['fl', 'progressive'],
     ['q', 65],
     ['w', width],
     ['h', height],
-    ['fit', fit || 'fill'],
-    ['f', f || 'center']
+    ['fit', 'fill'],
+    ['f', 'center']
   ])
 
-  // const merged = new Map([...defaults, ...options])
+  const merged = new Map([...defaults, ...options])
 
   const u = new URL(`https://${url}`)
 
-  for (const [key, value] of params) {
+  for (const [key, value] of merged) {
     u.searchParams.append(key, value)
   }
 
@@ -97,61 +96,51 @@ module.exports = function (config) {
 
   config.addFilter('randomNumber', ({ min, max }) => getRandomInt(min, max))
 
-  config.addFilter('bgImageFullWidth', (url) => {
-    const parsed = makeImageString(url, { width: 320, height: 520, f: 'left' })
+  config.addShortcode('articleImage', (img) => {
+    if (!img) return '<div class="text__hero-image"></div>'
+
+    const { url } = img.fields.file
     const sizes = [
-      { width: 410, height: 720, f: 'left' },
-      { width: 520, height: 820, f: 'left' },
-      { width: 620, height: 520 },
-      { width: 720, height: 620 },
-      { width: 820, height: 720 },
-      { width: 1020, height: 820 },
-      { width: 1220, height: 1020 },
-      { width: 1420, height: 1220 },
-      { width: 1820, height: 1620 },
-      { width: 2220, height: 1620 }
+      { width: 205, height: 720 },
+      { width: 260, height: 820 },
+      { width: 310, height: 520 },
+      { width: 360, height: 920 },
+      { width: 410, height: 1020 },
+      { width: 510, height: 1220 },
+      { width: 610, height: 1420 },
+      { width: 710, height: 1620 },
+      { width: 910, height: 1820 },
+      { width: 1110, height: 2020 }
     ]
 
-    let stl = `.site-header {
-          background-image: url(${parsed});
-        }`
+    const webpOptions = new Map([
+      ['fm', 'webp'],
+      ['q', 80]
+    ])
+    const jpgOptions = new Map([
+      ['fl', 'progressive'],
+      ['q', 50]
+    ])
 
-    sizes.forEach((size) => {
-      let img = makeImageString(url, size)
+    const webP = sizes
+      .map((size) => makeImageString(url, size, webpOptions))
+      .join(', ')
+    const jpg = sizes
+      .map((size) => makeImageString(url, size, jpgOptions))
+      .join(', ')
+    const imgSizes = '(min-width: 1500px) 33vw, 25vw'
 
-      stl += `@media (min-width: ${size.width}px) { .site-header { background-image: url(${img}); } }`
-    })
-
-    const { styles } = cCSS.minify(stl)
-
-    return `<style>${styles}</style>`
-  })
-
-  config.addShortcode('bgImgBlob', (url, index) => {
-    const initial = makeImageString(url, { width: 550, height: 250 })
-
-    const sizes = [600, 650, 750, 900, 1200, 1400, 1800, 2200]
-
-    let stl = `.background-holder.-is-${index} {
-      background-image: url(${initial});
-    } `
-
-    sizes.forEach((size) => {
-      const imgSize = Math.round(size / 3)
-      let img = makeImageString(url, {
-        width: imgSize,
-        height: imgSize,
-        fit: 'fill'
-      })
-
-      stl += `@media (min-width: ${size}px) { .background-holder.-is-${index} {
-        background-image: url(${img});
-      } }`
-    })
-
-    const { styles } = cCSS.minify(stl)
-
-    return `<style>${styles}</style>`
+    return `
+      <picture class="text__hero-image">
+        <source srcset="${webP}" sizes="${imgSizes}" />
+        <source srcset="${jpg}" sizes="${imgSizes}" />
+        <img src="${makeImageString(
+          url,
+          { width: 420, height: 1024 },
+          jpgOptions
+        )}" alt="${img.fields.description}" />
+      </picture>
+    `
   })
 
   config.addShortcode('metaRobots', function () {
@@ -179,7 +168,7 @@ module.exports = function (config) {
       if (!fullItemInformation) return ''
 
       return `<div class="pagination-navigation__section">
-        <h3 class="pagination-navigation__sub-headline">${infos.headline}</h3>
+        <h3 class="pagination-navigation__sub-headline type-small-caps">${infos.headline}</h3>
         <a class="pagination-navigation__link ${infos.class}" href="${paginationLink}">${fullItemInformation.title}</a>
       </div>`
     }

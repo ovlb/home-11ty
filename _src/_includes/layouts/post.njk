@@ -5,7 +5,7 @@
 
 {% block content %}
   <main id="main" class="text" tabindex="-1">
-    <header class="text__header">
+    <header class="text__header u-floral-heart-gradient">
       <p class="type-is-aside">
         {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
       </p>
@@ -16,12 +16,12 @@
         </p>
       {% endif %}
     </header>
-    <picture class="text__hero-image"></picture>
+    {% articleImage post.image %}
     <div class="text__body">
       {{ content | safe }}
     </div>
     <section role="section" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
-      <h2 id="pgntn-hdln">Other things I’ve written</h2>
+      <h2 id="pgntn-hdln" class="pagination-navigation__headline">Other things I’ve written</h2>
       {% paginationItem 'previous', pagination.href.previous, articles.ownPosts %}
       {% paginationItem 'next', pagination.href.next, articles.ownPosts %}
     </section>
