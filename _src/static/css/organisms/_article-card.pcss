@@ -10,7 +10,6 @@
   padding-left: 2vmin;
   position: relative;
 
-  &:hover,
   &:focus-within {
     & .article-card__headline {
       transform: translateX(-1vmin);
@@ -40,12 +39,24 @@
     height: 4px;
     left: -1rem;
     position: absolute;
-    transform-origin: left bottom;
-    transform: rotate(45deg) translate(-49%, -150%) scale(0.5, 0.5);
+    transform-origin: left top;
+    transform: translate(min(-25vw, -8em), -50%) scale(0.5, 0.5);
     transition: transform 0.2s cubic-bezier(0, 0.1, 0.3, 1);
     width: calc(100% + 1.25rem);
     will-change: transform;
     z-index: -1;
+
+    @media (prefers-reduced-motion: reduce) {
+      transition: none;
+    }
+  }
+
+  &:hover {
+    transform: translateX(-1vmin);
+
+    &::before {
+      transform: unset;
+    }
   }
 }
 
@@ -64,5 +75,10 @@
       transform: translateY(0.1em);
       width: 0.8em;
     }
+  }
+
+  &:focus {
+    outline: 2px solid var(--clr-decent);
+    outline-offset: 1px;
   }
 }

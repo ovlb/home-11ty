@@ -72,3 +72,16 @@ p {
   color: var(--clr-decent);
   font-size: var(--type-small);
 }
+
+.type-small-caps {
+  font-size: 80%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  word-spacing: 0.05em;
+
+  @supports (font-variant-caps: all-small-caps) {
+    font-size: inherit;
+    font-variant-caps: all-small-caps;
+    text-transform: none;
+  }
+}
