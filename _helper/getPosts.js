@@ -21,7 +21,7 @@ module.exports = async function ({ type, order = '-sys.createdAt' }) {
     })
 
     return items.map((item) => {
-      return item.fields
+      return { id: item.sys.id, ...item.fields }
     })
   } catch (e) {
     throw new Error(e.message)

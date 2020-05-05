@@ -7,7 +7,7 @@
   <main id="main" class="text" tabindex="-1">
     <header class="text__header u-floral-heart-gradient">
       <p class="type-is-aside">
-        {{ post.categories[0].fields.title + '–' if post.categories else '' }}{{ post.date | displayDate }}
+        {{ post.categories[0].fields.title + '–' if post.categories else '' }}<time datetime="{{ post.date }}">{{ post.date | displayDate }}</time>
       </p>
       <h1 class="main-headline">{{ post.title }}</h1>
       {% if post.contentIntro %}
