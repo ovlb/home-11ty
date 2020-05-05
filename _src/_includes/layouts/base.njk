@@ -54,7 +54,9 @@
     {% if usesBlock !== true %}
       {{ content | safe }}
     {% endif %}
-    {# {% include "partials/footer.njk" %} #}
+    {% if hideSiteHeader !== true %}
+      {% include "components/global/site-footer.njk" %}
+    {% endif %}
     <script>
       window.addEventListener('DOMContentLoaded', (event) => {
         var $main = document.getElementById('main')

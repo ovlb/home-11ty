@@ -1,13 +1,16 @@
 <nav class="site-nav {{ navClass }}" aria-label="Site">
-  {% for item in site.navItems %}
-    {% set currentAttribute = '' %}
-    {% set navClass = 'site-nav__item' %}
+  <ul class="site-nav__list">
+    {% for item in site.navItems %}
+      {% set currentAttribute = '' %}
+      {% set navClass = 'site-nav__item type-small-caps' %}
 
-    {% if page.url == item.url %}
-      {% set currentAttribute = 'aria-current="page"' %}
-      {% set navClass = navClass + ' -is-active' %}
-    {% endif %}
+      {% if page.url == item.url %}
+        {% set currentAttribute = 'aria-current="page"' %}
+        {% set navClass = navClass + ' -is-active' %}
+      {% endif %}
 
-    <a href="{{ item.url }}" {{ currentAttribute | safe }} class="{{ navClass }}">{{ item.text }}</a>
-  {% endfor %}
+      <li>
+        <a href="{{ item.url }}" {{ currentAttribute | safe }} class="{{ navClass }}">{{ item.text }}</a>
+    {% endfor %}
+  </ul>
 </nav>

@@ -151,6 +151,18 @@ module.exports = function (config) {
     return ''
   })
 
+  config.addShortcode('socialNavIcons', function (items) {
+    console.log(items)
+
+    return `<ul class="icon-nav__list" role="list">
+      ${items
+        .map(({ url, title }) => {
+          return `<li><a href="${url}" class="icon-nav__link -is-${title.toLowerCase()}">${title}</a>`
+        })
+        .join('')}
+    </ul>`
+  })
+
   config.addShortcode(
     'paginationItem',
     (direction, paginationLink, allItems) => {
