@@ -1,0 +1,40 @@
+.switch-button {
+  margin: 2vmin 0;
+}
+
+.switch-button__label {
+  display: block;
+}
+
+.switch-button__button {
+  appearance: none;
+  background-color: var(--clr-bg);
+  border: none;
+  padding: 0.25em 0.5em;
+
+  &[aria-pressed='true'] {
+    & .switch-button__text.-checked {
+      font-weight: bold;
+    }
+  }
+
+  &[aria-pressed='false'] {
+    & .switch-button__text.-unchecked {
+      font-weight: bold;
+
+      & .switch-button__text.-unchecked {
+        opacity: 0.75;
+      }
+    }
+
+    & .switch-button__text.-checked {
+      opacity: 0.75;
+    }
+  }
+}
+
+.switch-button__text {
+  & + & {
+    margin-left: 0.5em;
+  }
+}

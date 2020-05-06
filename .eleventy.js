@@ -3,6 +3,8 @@ const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const anchor = require('markdown-it-anchor')
 const prism = require('markdown-it-prism')
 const STATIC_FOLDERS = require('./_helper/paths')
+const fs = require('fs')
+const path = require('path')
 
 const mdIt = require('markdown-it')({
   html: true
@@ -168,6 +170,14 @@ module.exports = function (config) {
     </ul>`
   })
 
+  config.addShortcode('inlineScript', function (name) {
+    const content = fs.readFileSync(
+      path.resolve(__dirname, '_helper', `${name}.js`)
+    )
+
+    return `<script>${content.toString()}</script>`
+  })
+
   config.addShortcode(
     'paginationItem',
     (direction, paginationLink, allItems) => {
@@ -192,6 +202,7 @@ module.exports = function (config) {
   )
 
   config.addWatchTarget(`./${STATIC_FOLDERS.css}**/*`)
+  config.addWatchTarget('./_helper/**/*')
 
   config.addPassthroughCopy({ [`./${STATIC_FOLDERS.img}`]: '/img' })
 

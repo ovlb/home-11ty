@@ -1,0 +1,27 @@
+.icon {
+  align-items: center;
+  display: inline-flex;
+
+  &::before {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: var(--icon-size, 1rem);
+    margin-right: calc(var(--icon-size, 1rem) / 4);
+    width: var(--icon-size, 1rem);
+  }
+
+  &.-i-dark {
+    &::before {
+      background-image: url('/img/icons/moon-dark.svg');
+    }
+  }
+
+  &.-i-light {
+    &::before {
+      background-image: url('/img/icons/sun-dark.svg');
+    }
+  }
+}
