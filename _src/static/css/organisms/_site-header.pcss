@@ -4,10 +4,14 @@
   display: flex;
   flex-flow: row wrap;
   height: var(--layout-header-height);
-  padding: 2vmin 4vmin;
+  padding: 0.25rem 4vmin;
   position: sticky;
   top: 0;
   z-index: 100;
+
+  & > * {
+    display: flex;
+  }
 }
 
 .site-header__logo {

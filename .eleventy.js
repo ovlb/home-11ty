@@ -159,8 +159,6 @@ module.exports = function (config) {
   })
 
   config.addShortcode('socialNavIcons', function (items) {
-    console.log(items)
-
     return `<ul class="icon-nav__list" role="list">
       ${items
         .map(({ url, title }) => {
@@ -168,6 +166,19 @@ module.exports = function (config) {
         })
         .join('')}
     </ul>`
+  })
+
+  config.addShortcode('inlineLogo', function (clsName) {
+    const logo = fs.readFileSync(
+      path.resolve(
+        __dirname,
+        '_src/static/img/logo',
+        'ovl-logo-bridge-main.svg'
+      ),
+      { encoding: 'utf-8' }
+    )
+
+    return `<div class="${clsName}">${logo.toString()}</div>`
   })
 
   config.addShortcode('inlineScript', function (name) {
