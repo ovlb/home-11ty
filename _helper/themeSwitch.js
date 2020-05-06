@@ -18,7 +18,7 @@
     isDarkMode = isDark
   }
 
-  $switchButton.setAttribute('aria-pressed', isDarkMode.toString())
+  $switchButton.setAttribute('aria-checked', isDarkMode.toString())
 
   $switchContainer.addEventListener('click', function () {
     isDarkMode = !isDarkMode
@@ -27,7 +27,7 @@
 
     localStorage.setItem('ovlUserTheme', theme)
 
-    $switchButton.setAttribute('aria-pressed', isDarkMode.toString())
+    $switchButton.setAttribute('aria-checked', isDarkMode.toString())
 
     document.documentElement.setAttribute('data-user-theme', theme)
   })
