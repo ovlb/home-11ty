@@ -15,7 +15,7 @@
       transform: translateX(-1vmin);
 
       &::before {
-        transform: unset;
+        transform: translateX(100%);
       }
     }
   }
@@ -34,16 +34,15 @@
   &::before {
     backface-visibility: hidden;
     background-color: var(--clr-decent);
-    bottom: -0.125rem;
+    bottom: 0;
     content: '';
-    height: 4px;
+    height: 0.125rem;
     left: -1rem;
     position: absolute;
+    transform: translateX(-50%) scale(0.5, 0.5);
     transform-origin: left top;
-    transform: translate(min(-25vw, -8em), -50%) scale(0.5, 0.5);
     transition: transform 0.2s cubic-bezier(0, 0.1, 0.3, 1);
     width: calc(100% + 1.25rem);
-    will-change: transform;
     z-index: -1;
 
     @media (prefers-reduced-motion: reduce) {
