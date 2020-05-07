@@ -189,6 +189,14 @@ module.exports = function (config) {
     return `<script>${content.toString()}</script>`
   })
 
+  config.addShortcode('baseIcon', function (name, { size = 24 } = {}) {
+    const iconContent = fs.readFileSync(
+      path.resolve(__dirname, '_src/static/img/icons/', `${name}.svg`)
+    )
+
+    return `<svg xmlns="http://www.w3.org/2000/svg" class="base-icon" width="${size}" height="${size}" viewBox="0 0 24 24">${iconContent}</svg>`
+  })
+
   config.addShortcode(
     'paginationItem',
     (direction, paginationLink, allItems) => {

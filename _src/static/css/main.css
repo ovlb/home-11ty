@@ -7,6 +7,8 @@
 @import './elements/_a.pcss';
 @import './elements/_worry-stone.pcss';
 @import './elements/_icon.pcss';
+@import './elements/_pill.pcss';
+@import './elements/buttons/_icon-button.pcss';
 
 @import './organisms/lists/_root.pcss';
 @import './organisms/_site-header.pcss';
