@@ -197,6 +197,21 @@ module.exports = function (config) {
     return `<svg xmlns="http://www.w3.org/2000/svg" class="base-icon" width="${size}" height="${size}" viewBox="0 0 24 24">${iconContent}</svg>`
   })
 
+  config.addShortcode('navLink', function (menuItem, page) {
+    let ariaCurrent = page.url === menuItem.url ? 'aria-current="page"' : ''
+    let itemClasses = 'site-nav__item type-small-caps'
+
+    if (page.url.includes(menuItem.url) && !menuItem.exact) {
+      itemClasses += ' -is-active'
+    }
+
+    if (page.url === menuItem.url && menuItem.exact) {
+      itemClasses += ' -is-active'
+    }
+
+    return `<a href="${menuItem.url}" class="${itemClasses}" ${ariaCurrent}>${menuItem.text}</a>`
+  })
+
   config.addShortcode(
     'paginationItem',
     (direction, paginationLink, allItems) => {

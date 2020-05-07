@@ -10,7 +10,7 @@
       {% endif %}
 
       <li>
-        <a href="{{ item.url }}" {{ currentAttribute | safe }} class="{{ navClass }}">{{ item.text }}</a>
+        {% navLink item, page %}
     {% endfor %}
   </ul>
 </nav>
