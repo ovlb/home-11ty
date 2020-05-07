@@ -26,7 +26,15 @@ pageCSS: 'text'
             <span class="sr-only">Published on</span>
             <time datetime="{{ post.date }}" class="article-card__date type-is-aside">{{ post.date | displayDate }}</time>
           </p>
-          <h2 class="article-card__headline" id="title-{{ post.id }}"><a href="{{ post.permalink }}" class="{{ linkClass }}">{{ post.title | alwaysEndWithFullStop | safe }}</a></h2>
+          <h2
+            class="article-card__headline"
+            id="title-{{ post.id }}"
+          >
+              <a
+                href="{{ post.permalink }}"
+                class="{{ linkClass }}"
+              >{{ post.title | alwaysEndWithFullStop | safe }}</a>
+          </h2>
           <p>{{ post.intro }}</p>
           {% if post.isInternal === false %}
             <p class="type-is-aside">Published at {{ post.externalPost.fields.medium }}</p>
