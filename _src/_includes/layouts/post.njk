@@ -6,10 +6,10 @@
 {% block content %}
   <main id="main" class="text" tabindex="-1">
     <header class="text__header u-floral-heart-gradient">
-      <p class="type-is-aside">
+      <h1 class="main-headline">{{ post.title }}</h1>
+      <p class="text__subline type-is-aside">
         {{ post.categories[0].fields.title + '–' if post.categories else '' }}<time datetime="{{ post.date }}">{{ post.date | displayDate }}</time>
       </p>
-      <h1 class="main-headline">{{ post.title }}</h1>
       {% if post.contentIntro %}
         <p class="text__intro">
           {{ post.contentIntro }}
