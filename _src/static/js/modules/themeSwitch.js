@@ -1,5 +1,8 @@
 export function themeSwitchControl() {
   const $switchContainer = document.querySelector('.js-theme-switch')
+
+  if (!$switchContainer) return
+
   /**
    * @type HTMLButtonElement
    */
