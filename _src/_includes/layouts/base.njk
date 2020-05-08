@@ -35,8 +35,9 @@
           var regular = new FontFace("Bridge Text", "url(https://static.owlish.dev/fonts/bridge-subset/BridgeText-Regular-hint-all.woff2) format('woff2'), url(https://static.owlish.dev/fonts/bridge-subset/BridgeText-Regular-hint-all.woff) format('woff')");
           var italic = new FontFace("Bridge Text", "url(https://static.owlish.dev/fonts/bridge-subset/BridgeText-Regular-Italic-hint-all.woff2) format('woff2'), url(https://static.owlish.dev/fonts/bridge-subset/BridgeText-Regular-Italic-hint-all.woff) format('woff')", { style: 'italic' });
           var bold = new FontFace("Bridge Text", "url(https://static.owlish.dev/fonts/bridge-subset/BridgeText-Bold-hint-all.woff2) format('woff2'), url(https://static.owlish.dev/fonts/bridge-subset/BridgeText-Bold-hint-all.woff) format('woff')", { weight: "700" });
+          var head = new FontFace("Bridge Head", "url(https://static.owlish.dev/fonts/bridge-subset/BridgeHead-Bold-hint-all.woff2) format('woff2'), url(https://static.owlish.dev/fonts/bridge-subset/BridgeHead-Bold-hint-all.woff) format('woff')", { weight: "700" });
 
-          Promise.all([ bold.load(), regular.load(), italic.load() ]).then(function(fonts) {
+          Promise.all([ bold.load(), regular.load(), italic.load(), head.load() ]).then(function(fonts) {
               fonts.forEach(function(font) {
                   document.fonts.add(font);
               });
