@@ -7,3 +7,10 @@
   white-space: nowrap;
   width: 1px;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.0001ms !important;
+    transition: none !important;
+  }
+}
