@@ -1,4 +1,6 @@
 .site-nav {
+  overflow: hidden;
+
   & > ul {
     align-items: center;
     display: flex;
@@ -12,9 +14,34 @@
 .site-nav__item {
   /* needed for the transform to work */
   display: inline-block;
+  position: relative;
   text-decoration: none;
   transition: transform 0.2s ease-out;
   z-index: 1;
+
+  &::after {
+    background-image: url('/img/highlight-owl-32c.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    content: '';
+    display: inline-block;
+    height: 2rem;
+    left: 0;
+    padding: 0.25rem;
+    position: absolute;
+    top: 100%;
+    transform: translateY(100%);
+    transition: inherit;
+    width: 100%;
+  }
+
+  &:hover,
+  &:focus {
+    &::after {
+      transform: translateY(25%);
+    }
+  }
 
   &:hover,
   &:focus,
@@ -24,5 +51,9 @@
 
   &.-is-active {
     font-weight: bold;
+
+    &::after {
+      transform: translateY(0);
+    }
   }
 }
