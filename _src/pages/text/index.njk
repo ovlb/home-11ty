@@ -32,7 +32,7 @@ pageCSS: 'text'
               >{{ post.title | alwaysEndWithFullStop | safe }}</a>
           </h2>
           <p class="article-card__date ">
-            <span class="sr-only">Published on </span>
+            <span class="sr-only">Published in </span>
             <time datetime="{{ post.date }}" class="type-is-aside">{{ post.date | displayDate }}</time>
           </p>
           <p>{{ post.intro }}</p>
