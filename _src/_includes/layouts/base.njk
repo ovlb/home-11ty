@@ -13,8 +13,9 @@
 
     <meta name="description" content="{{ metaDescription }}">
     {% metaRobots %}
-    <link rel="stylesheet" href="/css/main.css">
+    {# <link rel="stylesheet" href="/css/main.css"> #}
 
+    <style>{{ css.main | safe }}</style>
     {% if pageCSS %}
       <style>{{ css[pageCSS] | safe }}</style>
     {% endif %}
