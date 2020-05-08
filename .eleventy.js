@@ -237,12 +237,14 @@ module.exports = function (config) {
   })
 
   config.addWatchTarget(`./${STATIC_FOLDERS.css}**/*`)
+  config.addWatchTarget(`./${STATIC_FOLDERS.js}**/*`)
   config.addWatchTarget('./_helper/**/*')
 
   config.addPassthroughCopy({ [`./${STATIC_FOLDERS.img}`]: '/img' })
+  config.addPassthroughCopy({ [`./${STATIC_FOLDERS.js}`]: '/js' })
 
   return {
-    templateFormats: ['liquid', 'md', 'njk', 'js'],
+    templateFormats: ['liquid', 'md', 'njk'],
     // dataTemplateEngine: false,
     htmlTemplateEngine: 'njk',
     markdownTemplateEngine: 'liquid',

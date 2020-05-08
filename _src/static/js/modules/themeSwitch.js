@@ -1,4 +1,4 @@
-;(function () {
+export function themeSwitchControl() {
   const $switchContainer = document.querySelector('.js-theme-switch')
   /**
    * @type HTMLButtonElement
@@ -55,4 +55,4 @@
   })
 
   $switchContainer.hidden = false
-})()
+}
