@@ -46,6 +46,7 @@
       }
     </script>
 
+    <style>{{ css.customProperties | safe }}</style>
     <style>{{ css.main | safe }}</style>
     {% if pageCSS %}
       <style>{{ css[pageCSS] | safe }}</style>
