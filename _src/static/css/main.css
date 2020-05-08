@@ -2,6 +2,7 @@
 @import './elements/base/_universal-selector.pcss';
 @import './elements/_html.pcss';
 @import './elements/_body.pcss';
+@import './elements/base/_main.pcss';
 @import './util/_typography.pcss';
 @import './elements/_a.pcss';
 @import './elements/_worry-stone.pcss';

@@ -58,10 +58,15 @@
   }
 
   &:hover {
-    transform: translateX(-1vmin);
+    transform: translateX(-0.25rem);
+
+    /* IE11 gets confused when trying to do this, hide it from it */
+    @supports (transform: translateX(-1vmin)) {
+      transform: translateX(-1vmin);
+    }
 
     &::before {
-      transform: unset;
+      transform: none;
     }
   }
 }
