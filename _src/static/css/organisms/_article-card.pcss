@@ -3,6 +3,8 @@
   background-position: center calc(100% - 0.66rem);
   background-repeat: no-repeat;
   background-size: 1rem;
+  display: flex;
+  flex-flow: column;
   list-style: none;
   margin-left: -2vmin;
   overflow: hidden;
@@ -19,6 +21,10 @@
       }
     }
   }
+}
+
+.article-card__date {
+  order: -1;
 }
 
 .article-card__headline {
