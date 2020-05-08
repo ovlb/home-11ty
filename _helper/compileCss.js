@@ -2,13 +2,25 @@ const path = require('path')
 const fs = require('fs')
 const postcss = require('postcss')
 const postcssImport = require('postcss-import')
+const postcssCustomProperties = require('postcss-custom-properties')
 const precss = require('precss')
 const autoprefixer = require('autoprefixer')
 const CleanCSS = require('clean-css')
 
 const STATIC_FOLDERS = require('./paths')
+const propertiesPath = path.join(
+  __dirname,
+  '../',
+  STATIC_FOLDERS.css,
+  'custom-properties.css'
+)
 
-const compiler = postcss([postcssImport, precss, autoprefixer])
+const compiler = postcss([
+  postcssImport,
+  precss,
+  postcssCustomProperties({ importFrom: propertiesPath }),
+  autoprefixer
+])
 const cCSS = new CleanCSS()
 
 const IS_PROD = process.env.ELEVENTY_ENV === 'production'

@@ -1,5 +1,4 @@
 @import './util/_font-face.pcss';
-@import './util/_custom-properties.pcss';
 @import './elements/base/_universal-selector.pcss';
 @import './elements/_html.pcss';
 @import './elements/_body.pcss';

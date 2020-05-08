@@ -2,6 +2,7 @@ const { compileCss } = require('../../_helper/compileCss')
 
 const partials = {
   code: 'code.css',
+  customProperties: 'custom-properties.css',
   footer: 'footer.css',
   home: 'home.css',
   main: 'main.css',
