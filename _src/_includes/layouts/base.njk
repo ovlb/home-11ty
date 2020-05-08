@@ -26,11 +26,6 @@
     {% metaRobots %}
     {# <link rel="stylesheet" href="/css/main.css"> #}
 
-    <style>{{ css.main | safe }}</style>
-    {% if pageCSS %}
-      <style>{{ css[pageCSS] | safe }}</style>
-    {% endif %}
-
     <link rel="preload" href="https://static.owlish.dev/fonts/bridge-subset/BridgeText-Bold-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="https://static.owlish.dev/fonts/bridge-subset/BridgeText-Regular-kern-latin.woff2" as="font" type="font/woff2" crossorigin>
 
@@ -50,6 +45,11 @@
         })
       }
     </script>
+
+    <style>{{ css.main | safe }}</style>
+    {% if pageCSS %}
+      <style>{{ css[pageCSS] | safe }}</style>
+    {% endif %}
 
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ metaTitle }}">
