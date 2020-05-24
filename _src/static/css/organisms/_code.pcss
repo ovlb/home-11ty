@@ -6,32 +6,32 @@
 
 code[class*='language-'],
 pre[class*='language-'] {
-  color: #f8f8f2;
   background: none;
+  color: #f8f8f2;
   font-family: var(--fonts-mono);
-  text-align: left;
-  white-space: pre;
-  word-spacing: normal;
-  word-break: normal;
-  word-wrap: normal;
-  line-height: 1.5;
-
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
 
   -webkit-hyphens: none;
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  text-align: left;
+  white-space: pre;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
 }
 
 /* Code blocks */
 pre[class*='language-'] {
-  padding: 1em;
+  border-radius: 0.3em;
   margin: 0.5em 0;
   overflow: auto;
-  border-radius: 0.3em;
+  padding: 1em;
 }
 
 :not(pre) > code[class*='language-'],
@@ -41,8 +41,8 @@ pre[class*='language-'] {
 
 /* Inline code */
 :not(pre) > code[class*='language-'] {
-  padding: 0.1em;
   border-radius: 0.3em;
+  padding: 0.1em;
   white-space: normal;
 }
 
@@ -118,8 +118,8 @@ pre[class*='language-'] {
 @media screen and (-ms-high-contrast: active) {
   code[class*='language-'],
   pre[class*='language-'] {
-    color: windowText;
     background: window;
+    color: windowText;
   }
 
   :not(pre) > code[class*='language-'],

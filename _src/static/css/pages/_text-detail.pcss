@@ -65,6 +65,7 @@ $bp-text-one: 777px;
 }
 
 .text__hero-image {
+  align-self: stretch;
   background-color: var(--clr-accent);
   background-image: linear-gradient(
     to bottom left,
@@ -73,15 +74,14 @@ $bp-text-one: 777px;
   );
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 6vmin 100%);
   grid-column: aside;
-  align-self: stretch;
   position: sticky;
   top: var(--layout-header-height);
   width: 100%;
 
   & > img {
     height: 100%;
-    object-fit: cover;
     mix-blend-mode: multiply;
+    object-fit: cover;
     width: 100%;
   }
 }
@@ -89,8 +89,8 @@ $bp-text-one: 777px;
 .text__body {
   background-color: var(--clr-bg);
   display: grid;
-  grid-template-columns: 2vmin [full-start] 2vmin [main-start] 1fr [main-end] 2vmin [full-end] 2vmin;
   grid-column: content;
+  grid-template-columns: 2vmin [full-start] 2vmin [main-start] 1fr [main-end] 2vmin [full-end] 2vmin;
   padding: 4vmin 0;
   /* Used to push body over sticky image */
   z-index: 1;
@@ -104,7 +104,7 @@ $bp-text-one: 777px;
     border: 1px solid #00000017;
     border-radius: 0.25rem;
     font-family: var(--fonts-mono);
-    font-size: 79%;
+    font-size: 83%;
     padding: 0.1rem 0.3rem 0.2rem;
   }
 
@@ -116,17 +116,17 @@ $bp-text-one: 777px;
     font-family: var(--fonts-mono);
     font-size: 85%;
     grid-column: full;
+    line-height: 1.7;
     margin-top: 2vmin;
     overflow: auto;
-    line-height: 1.7;
     padding: 2vmin 4vmin;
     width: 100%;
   }
 
   & blockquote {
+    line-height: 1.4;
     margin: 1rem 0 2rem;
     max-width: 55ch;
-    line-height: 1.4;
     padding: 1rem 0 1rem 2vmin;
     position: relative;
 
