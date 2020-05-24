@@ -1,5 +1,7 @@
 require('dotenv').config()
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
+const pluginRss = require('@11ty/eleventy-plugin-rss')
+
 const anchor = require('markdown-it-anchor')
 const prism = require('markdown-it-prism')
 const STATIC_FOLDERS = require('./_helper/paths')
@@ -65,6 +67,7 @@ module.exports = function (config) {
   config.addPassthroughCopy('assets/sitemap.xml')
 
   config.addPlugin(syntaxHighlight)
+  config.addPlugin(pluginRss)
 
   config.addFilter('debug', (val) => {
     console.log(val)
