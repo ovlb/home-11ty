@@ -10,12 +10,17 @@ module.exports = async function () {
       ? `/text/${article.slug}/`
       : article.externalPost.fields.link
 
+    article.date = new Date(article.date)
+
     return article
   })
   const ownPosts = posts.filter((post) => post.isInternal)
 
+  const lastUpdated = ownPosts[0].date.toISOString()
+
   return {
     posts,
-    ownPosts
+    ownPosts,
+    lastUpdated
   }
 }
