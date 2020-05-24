@@ -17,23 +17,6 @@ const mdIt = require('markdown-it')({
 mdIt.use(anchor)
 mdIt.use(prism)
 
-const CleanCSS = require('clean-css')
-
-const cCSS = new CleanCSS()
-
-/**
- * Returns a random integer between min (inclusive) and max (inclusive).
- * The value is no lower than min (or the next integer greater than min
- * if min isn't an integer) and no greater than max (or the next integer
- * lower than max if max isn't an integer).
- * Using Math.round() will give you a non-uniform distribution!
- */
-function getRandomInt(min, max) {
-  min = Math.ceil(min)
-  max = Math.floor(max)
-  return Math.floor(Math.random() * (max - min + 1)) + min
-}
-
 /**
  *
  *
@@ -63,9 +46,6 @@ function makeImageString(url, { width, height }, options) {
 }
 
 module.exports = function (config) {
-  config.addPassthroughCopy('assets/img')
-  config.addPassthroughCopy('assets/sitemap.xml')
-
   config.addPlugin(syntaxHighlight)
   config.addPlugin(pluginRss)
 
@@ -102,7 +82,6 @@ module.exports = function (config) {
     // return `<div class="parsed">${result}</div>`
   })
 
-  config.addFilter('randomNumber', ({ min, max }) => getRandomInt(min, max))
   config.addFilter('alwaysEndWithFullStop', alwaysEndWithFullStop)
 
   config.addShortcode('articleImage', (img) => {
