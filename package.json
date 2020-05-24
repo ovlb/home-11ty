@@ -7,15 +7,16 @@
     "build": "ELEVENTY_ENV=production eleventy",
     "lint": "concurrently \"npm:lint:*\"",
     "lint:css": "stylelint '**/*.pcss' --fix",
-    "lint:js": "eslint \"src/**/*.js\" \".eleventy.js\" --fix",
+    "lint:js": "eslint \"_src/**/*.js\" \".eleventy.js\" --fix",
     "serve": "concurrently \"npm:serve:*\"",
     "serve:11ty": "ELEVENTY_ENV=development eleventy --serve --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "ava"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.10.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "autoprefixer": "^9.7.6",
+    "ava": "^3.8.2",
     "clean-css": "^4.2.3",
     "concurrently": "^5.1.0",
     "contentful": "^7.14.2",
@@ -23,7 +24,9 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.5",
     "install": "^0.13.0",
+    "lint-staged": "^10.2.2",
     "markdown-it-anchor": "^5.2.7",
     "markdown-it-prism": "^2.0.5",
     "npm": "^6.14.4",
@@ -45,5 +48,20 @@
   "license": "MIT",
   "engines": {
     "node": "^12"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint && npm run test"
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "npm run lint:js",
+      "npm run test"
+    ],
+    "_src/**/*.(p)?css": [
+      "npm run lint:css"
+    ]
   }
 }
