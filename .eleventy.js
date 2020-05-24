@@ -6,6 +6,9 @@ const STATIC_FOLDERS = require('./_helper/paths')
 const fs = require('fs')
 const path = require('path')
 
+/** Filter */
+const alwaysEndWithFullStop = require('./_filters/alwaysEndWithFullStop')
+
 const mdIt = require('markdown-it')({
   html: true
 })
@@ -97,11 +100,7 @@ module.exports = function (config) {
   })
 
   config.addFilter('randomNumber', ({ min, max }) => getRandomInt(min, max))
-  config.addFilter('alwaysEndWithFullStop', function (str) {
-    if (str.endsWith('.')) return str
-
-    return `${str}<span class="sr-only">.</span>`
-  })
+  config.addFilter('alwaysEndWithFullStop', alwaysEndWithFullStop)
 
   config.addShortcode('articleImage', (img) => {
     if (!img) return '<div class="text__hero-image"></div>'
