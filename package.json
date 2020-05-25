@@ -7,7 +7,7 @@
     "build": "ELEVENTY_ENV=production eleventy",
     "lint": "concurrently \"npm:lint:*\"",
     "lint:css": "stylelint '**/*.pcss' --fix",
-    "lint:js": "eslint \"_src/**/*.js\" \".eleventy.js\" --fix",
+    "lint:js": "eslint \"_src/**/*.js\" --ignore-pattern '!.eleventy.js' --fix",
     "serve": "concurrently \"npm:serve:*\"",
     "serve:11ty": "ELEVENTY_ENV=development eleventy --serve --quiet",
     "test": "ava"
