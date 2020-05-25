@@ -20,6 +20,8 @@
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
+  {% set iconUrl = metadata.url  + 'img/favicon/favicon-32x32.png' %}
+  <icon>{{ iconUrl }}</icon>
   <updated>{{ articles.lastUpdated }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
@@ -27,14 +29,14 @@
     <email>{{ metadata.author.email }}</email>
   </author>
   {%- for post in articles.ownPosts %}
-  {% set absolutePostUrl %}{{ post.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
-  <entry>
-    <title>{{ post.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
-    <updated>{{ post.date | rssDate }}</updated>
-    <id>{{ absolutePostUrl }}</id>
-    <summary>{{ post.intro }}</summary>
-    <content type="html">{{ post.content | md | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
-  </entry>
+    {% set absolutePostUrl %}{{ post.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | rssDate }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <summary type="html">{{ post.intro }}</summary>
+      <content type="html">{{ post.content | md | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+    </entry>
   {%- endfor %}
 </feed>
