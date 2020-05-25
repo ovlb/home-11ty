@@ -6,7 +6,7 @@
     "title": "ovl",
     "subtitle": "code, design & opinions",
     "url": "https://11ty.owlish.dev/",
-    "feedUrl": "https://11ty.owlish.dev/feed.xml",
+    "feedUrl": "https://11ty.owlish.dev/text/feed.xml",
     "author": {
       "name": "Oscar Braunert",
       "email": "o@ovl.design"
@@ -19,7 +19,7 @@
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
+  <link href="{{ metadata.url + 'text/' }}"/>
   {% set iconUrl = metadata.url  + 'img/favicon/favicon-32x32.png' %}
   <icon>{{ iconUrl }}</icon>
   <updated>{{ articles.lastUpdated }}</updated>
