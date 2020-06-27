@@ -78,10 +78,7 @@
   </head>
   <body class="{{ templateClass }}">
     <a href="#main" class="skip-link js-skip-link">{{ site.strings.skip_to_content }}</a>
-    <div>
-      <p class="worry-stone">Things looking a little rough? This project is a <a href="https://ethanmarcotte.com/wrote/let-a-website-be-a-worry-stone/">worry stone</a>. I will continously port features from my <a href="https://www.ovl.design">current site</a>. <a href="https://github.com/ovlb/home-11ty">The code</a> is on GitHub.</p>
-    </div>
-    {% if hideSiteHeader !== true %}
+    {% if hideSiteNavigation !== true %}
       {% include "components/global/site-header.njk" %}
     {% endif %}
     {% block content %}
@@ -89,7 +86,7 @@
     {% if usesBlock !== true %}
       {{ content | safe }}
     {% endif %}
-    {% if hideSiteHeader !== true %}
+    {% if hideSiteNavigation !== true %}
       {% include "components/global/site-footer.njk" %}
     {% endif %}
     <script type="module" src="/js/main.js"></script>

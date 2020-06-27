@@ -5,7 +5,6 @@
 @import './elements/base/_main.pcss';
 @import './util/_typography.pcss';
 @import './elements/_a.pcss';
-@import './elements/_worry-stone.pcss';
 @import './elements/_icon.pcss';
 @import './elements/_pill.pcss';
 @import './elements/buttons/_icon-button.pcss';
