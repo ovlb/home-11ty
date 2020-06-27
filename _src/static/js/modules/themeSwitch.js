@@ -48,8 +48,6 @@ export function themeSwitchControl() {
   })
 
   $clearer.addEventListener('click', function () {
-    console.log('hide')
-
     isDarkMode = matchMedia('(prefers-color-scheme: dark)').matches
     localStorage.removeItem('ovlUserTheme')
     document.documentElement.removeAttribute('data-user-theme')
