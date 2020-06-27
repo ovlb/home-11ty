@@ -140,10 +140,10 @@ module.exports = function (config) {
   })
 
   config.addShortcode('socialNavIcons', function (items) {
-    return `<ul class="icon-nav__list" role="list">
+    return `<ul class="vertical-nav__list" role="list">
       ${items
         .map(({ url, title }) => {
-          return `<li><a href="${url}" class="icon-nav__link -is-${title.toLowerCase()}">${title}</a>`
+          return `<li><a href="${url}" class="vertical-nav__link -is-${title.toLowerCase()}">${title}</a>`
         })
         .join('')}
     </ul>`
