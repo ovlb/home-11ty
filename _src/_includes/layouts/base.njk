@@ -78,6 +78,7 @@
   </head>
   <body class="{{ templateClass }}">
     <a href="#main" class="skip-link js-skip-link">{{ site.strings.skip_to_content }}</a>
+    {% include "components/global/blm-banner.njk" %}
     {% if hideSiteNavigation !== true %}
       {% include "components/global/site-header.njk" %}
     {% endif %}
