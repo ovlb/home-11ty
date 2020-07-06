@@ -9,6 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ metaTitle }}</title>
+    <meta property="og:title" content="{{ metaTitle }}">
+    <meta name="twitter:title" content="{{ metaTitle }}">
+
     <link rel="preconnect" href="https://static.owlish.dev" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
@@ -21,8 +24,7 @@
     <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
     <meta name="theme-color" content="#f8f2e3">
 
-    <meta name="description" content="{{ metaDescription }}">
-    <link rel="canonical" href="https://www.ovl.design"/>
+    {% metaTags meta, post %}
     {% metaRobots %}
     {# <link rel="stylesheet" href="/css/main.css"> #}
 
@@ -52,24 +54,6 @@
     {% if pageCSS %}
       <style>{{ css[pageCSS] | safe }}</style>
     {% endif %}
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{ metaTitle }}">
-    <meta property="og:url" content="{{ siteUrl }}">
-    <meta property="og:image" content="{{ site.metaImage }}">
-    <meta property="og:image:type" content="image/png"/>
-    <meta property="og:image:width" content="1478"/>
-    <meta property="og:image:height" content="831"/>
-
-    {# <meta property="og:site_name" content="{{ site.name }}"> #}
-    <meta property="og:description" content="{{ metaDescription }}"/>
-
-    <!-- twitter -->
-    {# <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="{{ site.twitter }}">  #}
-    <meta name="twitter:title" content="{{ metaTitle }}">
-    <meta name="twitter:description" content="{{ metaDescription }}">
-    <meta name="twitter:image" content="{{ site.metaImage }}">
 
     <link rel="alternate" href="/text/feed.xml" title="ovl.design » blog feed" type="application/atom+xml">
     <link rel="feed" href="https://www.11ty.owlish.dev/text/">
