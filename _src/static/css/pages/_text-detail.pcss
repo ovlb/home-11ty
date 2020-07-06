@@ -5,7 +5,7 @@ $bp-text-one: 777px;
   display: grid;
   flex-flow: row wrap;
   grid-template-columns: [main-start content-start] 3fr [main-end aside-start] 1fr [aside-end content-end];
-  grid-template-rows: calc(100vh - var(--layout-header-height)) auto;
+  grid-template-rows: max(30rem, calc(100vh - var(--layout-header-height))) auto;
   margin: 0 auto;
   max-width: 900px;
 
