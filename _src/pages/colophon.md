@@ -3,6 +3,8 @@ permalink: '/colophon/'
 title: 'Colophon'
 subline: 'Saying thank you'
 layout: 'layouts/page.njk'
+meta:
+  description: 'No site is an island. Here I say thanks.'
 ---
 
 ## Fonts
@@ -17,7 +19,7 @@ The owl used in the main menu to highlight the active menu item has been [photog
 
 The image I use for the generic Open Graph/Twitter card/and so forth image has been taken from the book <cite>Gray lady and the birds; stories of the bird year for home and school</cite> and [posted on commons.wikimedia.com](<https://commons.wikimedia.org/wiki/File:Gray_lady_and_the_birds;_stories_of_the_bird_year_for_home_and_school_(1907)_(14752496571).jpg>).
 
-The owl of books in use on the overview page is used with kind permission from [Redmer Hoekstra](https://www.redmerhoekstra.nl/).
+<!-- The owl of books in use on the overview page is used with kind permission from [Redmer Hoekstra](https://www.redmerhoekstra.nl/). -->
 
 ## Code & Infrastructure
 

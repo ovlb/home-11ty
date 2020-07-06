@@ -11,6 +11,9 @@ const path = require('path')
 /** Filter */
 const alwaysEndWithFullStop = require('./_filters/alwaysEndWithFullStop')
 
+/** Shortcodes */
+const metaTags = require('./_shortcodes/metaTags')
+
 const mdIt = require('markdown-it')({
   html: true
 })
@@ -130,6 +133,8 @@ module.exports = function (config) {
       </picture>
     `
   })
+
+  config.addShortcode('metaTags', metaTags)
 
   config.addShortcode('metaRobots', function () {
     if (process.env.BUILD_ENV === 'preview') {
