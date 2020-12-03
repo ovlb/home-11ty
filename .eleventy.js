@@ -222,11 +222,11 @@ module.exports = function (config) {
       </div>`
   })
 
-  config.addWatchTarget(`./${STATIC_FOLDERS.css}**/*`)
-  config.addWatchTarget(`./${STATIC_FOLDERS.js}**/*`)
+  config.addWatchTarget(`./${STATIC_FOLDERS.static}**/*`)
   config.addWatchTarget('./_helper/**/*')
 
   config.addPassthroughCopy({ [`./${STATIC_FOLDERS.img}`]: '/img' })
+  config.addPassthroughCopy({ [`./${STATIC_FOLDERS.files}`]: '/files/' })
   config.addPassthroughCopy({ [`./${STATIC_FOLDERS.js}`]: '/js' })
 
   return {
