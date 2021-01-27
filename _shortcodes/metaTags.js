@@ -18,7 +18,7 @@ module.exports = function (meta = {}, post) {
   if (post) {
     if (post.openGraphImage) {
       meta.image = {
-        src: post.openGraphImage?.fields.file,
+        src: `https:${post.openGraphImage?.fields.file.url}`,
         alt: post.image?.fields.description
       }
     }
