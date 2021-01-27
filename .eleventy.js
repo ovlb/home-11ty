@@ -45,7 +45,7 @@ function makeImageString(url, { width, height }, options) {
     u.searchParams.append(key, value)
   }
 
-  return u.toString()
+  return `${u.toString()} ${merged.get('w')}w`
 }
 
 module.exports = function (config) {
