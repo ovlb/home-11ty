@@ -137,7 +137,7 @@ module.exports = function (config) {
   config.addShortcode('metaTags', metaTags)
 
   config.addShortcode('metaRobots', function () {
-    if (process.env.BUILD_ENV === 'preview') {
+    if (process.env.STAGE === 'preview') {
       return '<meta name="robots" content="noindex,nofollow" />'
     }
 
@@ -236,7 +236,7 @@ module.exports = function (config) {
     templateFormats: ['liquid', 'md', 'njk'],
     // dataTemplateEngine: false,
     htmlTemplateEngine: 'njk',
-    markdownTemplateEngine: 'liquid',
+    markdownTemplateEngine: 'njk',
     dir: {
       input: '_src',
       output: 'dist'
