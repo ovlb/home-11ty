@@ -30,7 +30,7 @@ module.exports = function (meta = {}, post) {
 
   const img = `
     <meta property="og:image" content="${values.image.src}?w=1478&h=831">
-    <meta name="twitter:image" content="${values.image.src}?w=1478&h=831">
+    <meta name="twitter:image" content="${values.image.src}?w=1478&h=831&fm=jpg&q=100">
     <meta name="twitter:image:alt" content="${values.image.alt}">
   `
 
