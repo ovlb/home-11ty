@@ -147,8 +147,11 @@ module.exports = function (config) {
   config.addShortcode('socialNavIcons', function (items) {
     return `<ul class="vertical-nav__list" role="list">
       ${items
-        .map(({ url, title }) => {
-          return `<li><a href="${url}" class="vertical-nav__link -is-${title.toLowerCase()}">${title}</a>`
+        .map(({ url, title, rel }) => {
+          return `<li>
+            <a href="${url}" class="vertical-nav__link -is-${title.toLowerCase()}" ${
+            rel && `rel=${rel}`
+          }>${title}</a>`
         })
         .join('')}
     </ul>`
