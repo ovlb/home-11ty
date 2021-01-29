@@ -3,13 +3,23 @@
 {% set title = post.title %}
 {% set usesBlock = true %}
 
+{% set categoriesString = post
+  .categories[0]
+  .fields
+  .title + ' —' if post
+  .categories else 
+    '' %}
+
 {% block content %}
   <main id="main" class="text h-entry" tabindex="-1">
     <header class="text__header u-floral-heart-gradient">
       <h1 class="main-headline p-name">{{ post.title }}</h1>
       <p class="text__subline type-is-aside">
-        {{ post.categories[0].fields.title + '–' if post.categories else '' }}
-        <time datetime="{{ post.date }}" class="dt-published">{{ post.date | displayDate }}</time>
+        {{ categoriesString }}
+        <time
+          datetime="{{ post.date }}"
+          class="dt-published"
+        >{{ post.date | displayDate }}</time>
       </p>
       {% if post.contentIntro %}
         <p class="text__intro p-summary">
