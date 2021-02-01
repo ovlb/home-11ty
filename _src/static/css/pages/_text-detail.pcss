@@ -10,7 +10,7 @@ $bp-text-one: 777px;
   max-width: 900px;
 
   @media screen and (min-width: $bp-text-one) {
-    grid-template-columns: [main-start content-start] minmax(65ch, 2fr) [main-end content-end aside-start] 1fr [aside-end];
+    grid-template-columns: [main-start content-start] minmax(65ch, 3fr) [main-end content-end aside-start] 2fr [aside-end];
   }
 
   @media screen and (min-width: 1500px) {
@@ -97,6 +97,15 @@ $bp-text-one: 777px;
 
   & > * {
     grid-column: main;
+  }
+
+  & > p + p {
+    margin-top: 0.5rem;
+
+    @media (min-width: $bp-text-one) {
+      margin-top: 0;
+      text-indent: 1em;
+    }
   }
 
   & p > code {
