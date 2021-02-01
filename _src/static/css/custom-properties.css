@@ -4,19 +4,30 @@
   --fonts-secondary: 'LautsprecherDJR', cursive;
   --fonts-mono: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
 
-  /* Values based on http://www.modularscale.com/?1&em&1.2 */
+  /* Values based on http://www.modularscale.com/?1&em&1.125 */
   --type-very-small: 0.694em;
   --type-small: 0.833em;
   --type-base: 1em;
-  --type-medium: 1.2em;
-  --type-large: 1.728em;
-  --type-xlarge: 2.488em;
-  --type-splash: 3.583em;
+  --type-medium: 1.125em;
+  --type-large: 1.266em;
+  --type-xlarge: 1.424em;
+  --type-splash: 2.072em;
 
   --layout-header-height: 5.75rem;
 
   @media (min-width: 444px) {
     --layout-header-height: 3.75rem;
+  }
+
+  @media (min-width: 37.5rem) {
+    /* Values based on http://www.modularscale.com/?1&em&1.2 */
+    --type-very-small: 0.694em;
+    --type-small: 0.833em;
+    --type-base: 1em;
+    --type-medium: 1.2em;
+    --type-large: 1.728em;
+    --type-xlarge: 2.488em;
+    --type-splash: 3.583em;
   }
 
   --clr-main: #b00000;
