@@ -8,11 +8,9 @@ meta:
   description: 'A collection of written pieces on design, code & the society.'
 ---
 
-
 <main id="main" class="homepage-content" tabindex="-1">
   <header class="archive-header u-floral-heart-gradient">
     <h1 class="main-headline">Scribbles on digital paper</h1>
-
   </header>
   <ol class="article-list u-global-padding" role="list">
     {% for post in articles.posts %}
@@ -23,12 +21,12 @@ meta:
       {% endif %}
 
       <li>
-        <article class="article-card" aria-labelledby="title-{{ post.id }}">
+        <article class="article-card" aria-labelledby="title-{{ post.id }}" lang="{{ post.locale }}">
           <h2
             class="article-card__headline"
             id="title-{{ post.id }}"
           >
-              <a
+            <a
                 href="{{ post.permalink }}"
                 class="{{ linkClass }}"
               >{{ post.title | alwaysEndWithFullStop | safe }}</a>
@@ -39,7 +37,9 @@ meta:
           </p>
           <p>{{ post.intro }}</p>
           {% if post.isInternal === false %}
-            <p class="type-is-aside">Published at {{ post.externalPost.fields.medium }}</p>
+            {% set published = 'Veröffentlicht bei' if post.locale == 'de' else 'Published at'%}
+            <p class="type-is-aside">{{ published }}
+              {{ post.externalPost.fields.medium }}</p>
           {% endif %}
         </article>
       </li>

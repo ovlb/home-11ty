@@ -12,8 +12,11 @@ module.exports = async function () {
 
     article.date = new Date(article.date)
 
+    article.locale = article.locale || 'en'
+
     return article
   })
+
   const ownPosts = posts.filter((post) => post.isInternal)
 
   const lastUpdated = ownPosts[0].date.toISOString()
