@@ -15,11 +15,15 @@
   align-items: center;
   /* needed for the transform to work */
   display: inline-flex;
-  height: var(--layout-header-height);
+
   position: relative;
   text-decoration: none;
   transition: transform 0.2s ease-out;
   z-index: 1;
+
+  @media (min-width: 376px) {
+    height: var(--layout-header-height);
+  }
 
   &::after {
     backface-visibility: hidden;
