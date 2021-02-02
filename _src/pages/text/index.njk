@@ -35,7 +35,7 @@ meta:
             <span class="sr-only">Published in </span>
             <time datetime="{{ post.date }}" class="type-is-aside">{{ post.date | displayDate }}</time>
           </p>
-          <p>{{ post.intro }}</p>
+          <p>{{ post.intro | md | safe }}</p>
           {% if post.isInternal === false %}
             {% set published = 'Veröffentlicht bei' if post.locale == 'de' else 'Published at'%}
             <p class="type-is-aside">{{ published }}
