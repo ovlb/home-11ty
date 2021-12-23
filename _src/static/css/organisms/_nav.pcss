@@ -15,13 +15,13 @@
   align-items: center;
   /* needed for the transform to work */
   display: inline-flex;
-
+  height: 2ex;
   position: relative;
   text-decoration: none;
   transition: transform 0.2s ease-out;
   z-index: 1;
 
-  @media (min-width: 376px) {
+  @media (min-width: 380px) {
     height: var(--layout-header-height);
   }
 
@@ -49,7 +49,7 @@
     &::after {
       transform: translateY(-50%);
 
-      @media (min-width: 444px) {
+      @media (min-width: 380px) {
         transform: translateY(-45%);
       }
     }
@@ -67,7 +67,7 @@
     &::after {
       transform: translateY(-100%) skewY(7deg);
 
-      @media (min-width: 444px) {
+      @media (min-width: 380px) {
         transform: translateY(-66%) skewY(7deg);
       }
     }

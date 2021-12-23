@@ -16,10 +16,14 @@
 }
 
 .site-header__logo {
-  height: 100%;
+  flex: 0 0 33%;
   margin-right: 2rem;
   max-width: 100px;
   width: 33%;
+
+  @media (min-width: 380px) {
+    height: 100%;
+  }
 
   & > svg {
     width: 100%;

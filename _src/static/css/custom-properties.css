@@ -15,7 +15,7 @@
 
   --layout-header-height: 5.75rem;
 
-  @media (min-width: 444px) {
+  @media (min-width: 380px) {
     --layout-header-height: 3.75rem;
   }
 
