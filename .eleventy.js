@@ -2,23 +2,18 @@ require('dotenv').config()
 const syntaxHighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const pluginRss = require('@11ty/eleventy-plugin-rss')
 
-const anchor = require('markdown-it-anchor')
-const prism = require('markdown-it-prism')
 const STATIC_FOLDERS = require('./_helper/paths')
 const fs = require('fs')
 const path = require('path')
+
+/** Libraries */
+const md = require('./_libraries/markdown')
 
 /** Filter */
 const alwaysEndWithFullStop = require('./_filters/alwaysEndWithFullStop')
 
 /** Shortcodes */
 const metaTags = require('./_shortcodes/metaTags')
-
-const mdIt = require('markdown-it')({
-  html: true
-})
-mdIt.use(anchor)
-mdIt.use(prism)
 
 /**
  *
@@ -52,6 +47,8 @@ module.exports = function (config) {
   config.addPlugin(syntaxHighlight)
   config.addPlugin(pluginRss)
 
+  config.setLibrary('md', md)
+
   config.addFilter('debug', (val) => {
     console.log(val)
   })
@@ -80,7 +77,7 @@ module.exports = function (config) {
   })
 
   config.addFilter('md', (raw) => {
-    return mdIt.render(raw)
+    return md.render(raw)
 
     // return `<div class="parsed">${result}</div>`
   })
