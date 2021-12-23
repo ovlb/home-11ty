@@ -2,7 +2,7 @@ require('dotenv').config()
 
 const contentful = require('contentful')
 const host =
-  process.env.STAGE === 'preview'
+  process.env.CF_STAGE === 'preview'
     ? 'preview.contentful.com'
     : 'https://cdn.contentful.com'
 
