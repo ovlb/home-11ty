@@ -14,6 +14,7 @@
 @import './organisms/_blm-banner.pcss';
 @import './organisms/_site-header.pcss';
 @import './organisms/_nav.pcss';
+@import './organisms/_blockquote.pcss';
 
 @import './util/_visual.pcss';
 @import './util/_accessibility.pcss';

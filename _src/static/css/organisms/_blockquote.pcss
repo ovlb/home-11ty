@@ -1,0 +1,38 @@
+blockquote {
+  line-height: 1.4;
+  margin: 1rem 0 2rem;
+  max-width: 55ch;
+  padding: 1rem 0 1rem 2vmin;
+  margin-bottom: 0.5rem;
+  position: relative;
+
+  &::before {
+    color: var(--clr-accent);
+    content: '“';
+    font-family: var(--fonts-headline);
+    font-size: var(--type-xlarge);
+    left: -0.125em;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.c-blockquote {
+  margin-bottom: 2rem;
+
+  & blockquote {
+    padding-bottom: 0;
+  }
+}
+
+.c-blockquote__attribution {
+  font-style: italic;
+  padding-left: 1rem;
+
+  &::before {
+    color: var(--clr-accent);
+    content: '☞';
+    display: inline-block;
+    margin-right: 0.5rem;
+  }
+}
