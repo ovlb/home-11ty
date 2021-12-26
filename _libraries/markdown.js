@@ -22,7 +22,7 @@ md.use(attribution, {
 
 md.renderer.rules.footnote_block_open = () =>
   '<section class="footnotes">\n' +
-  '<h2 class="small-headline">Footnotes</h4>\n' +
+  '<h2 class="small-headline">Footnotes</h2>\n' +
   '<ol class="footnotes-list">\n'
 
 module.exports = md
