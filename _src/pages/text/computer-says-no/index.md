@@ -8,7 +8,7 @@ post:
   contentIntro: Künstliche Intelligenz & Herrschaft
 ---
 
-Dieser Text ist eine Begleitung zu meinem Vortrag \<cite\>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)\</cite\>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die Slides können auf Notist eingesehen werden.
+Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die Slides können auf Notist eingesehen werden.
 
 ---
 
@@ -24,7 +24,7 @@ Ich werde im Folgenden verallgemeinernd von Künstlicher Intelligenz sprechen. E
 
 Es geht auf einer rein technischen Ebene vor allem um _Machine Learning (ML),_ _Deep Learning,_ oder _Pattern Recognition_. Also um spezifische Subfelder von KI.
 
-Im technisch-akademischen Diskurs ist diese Unterscheidung wichtig. Im Falle einer Betrachtung wie der hier anstehenden birgt diese vermeintliche Unschärfe auch Vorteile, wie Kate Crawford in der Einführung ihres Buches \<cite\>Atlas of AI\</cite\> beschreibt:
+Im technisch-akademischen Diskurs ist diese Unterscheidung wichtig. Im Falle einer Betrachtung wie der hier anstehenden birgt diese vermeintliche Unschärfe auch Vorteile, wie Kate Crawford in der Einführung ihres Buches <cite>Atlas of AI</cite> beschreibt:
 
 > [T]he nomenclature of AI is often embraced during funding application season, when venture capitalists come bearing checkbooks, or when researchers are seeking press attention for a new scientific result. As a result, the term is both used and rejected in ways that keep its meaning in flux. For my purposes, I use AI to talk about the massive industrial formation that includes politics, labor, culture and capital. When I refer to machine learning, I’m speaking of a range of technical approaches (which are, in fact, social and infrastructural as well, although rarely spoken about as such).
 > -- Kate Crawford – Atlas of AI, p. 9
@@ -72,9 +72,9 @@ Die erste ist völlig unbezahlte Arbeit. Diese wird in aller Regel nicht als sol
 
 ### Unsichtbare Arbeit
 
-In der Einleitung zur Geschichte der KI haben wir ImageNet als erste große Bilddatenbank erwähnt. Möglich gemacht wurde sie durch die Arbeit vieler tausender Arbeiter:innen auf Amazons Mechanical Turk Plattform. Ohne diese Arbeit wäre ImageNet vermutlich nie möglich gewesen. Heutzutage ist sie eines der Standbeine der Arbeit mit Künstlicher Intelligenz.
+In der Einleitung zur Geschichte der KI haben wir ImageNet als erste große Bilddatenbank gesprochen und über Crowdwork als eine der Voraussetzungen für ihre Verwirklichung. Heutzutage ist Crowdwork eines der Standbeine der Erstellung von Algorithmen.
 
-In regelmäßigen Abständen können wir Schlagzeilen lesen, in denen dieser Automatismus als gegeben angenommen wird. «KI hat dieses oder jenes gemacht». In Go gewonnen, Texte geschrieben, Proteine in ihrer dreidimensionalen Struktur wiedergegeben. Diese Schlagzeilen haben nur ein Problem:
+In regelmäßigen Abständen können wir Schlagzeilen lesen, in denen Algorithmen als vollkommen automatisiert verstanden werden. «KI hat dieses oder jenes gemacht». In Go gewonnen, Texte geschrieben, Proteine in ihrer dreidimensionalen Struktur wiedergegeben. Diese Schlagzeilen haben nur ein Problem:
 
 > Headlines like “AI discovered how to cure a type of cancer”. Of course it’s never AI that did this. It’s researchers, very hardworking researchers, who use AI machine learning tools like any other tool. It’s both demeaning to the researchers who did that work and creates massive confusion among the public when journalists attribute agency to AI. There’s no reason to do that, especially in headlines.
 > -- Arvind Narayanan in [Fake AI](https://fakeaibook.com/), S. 24
@@ -83,8 +83,6 @@ Die Vorarbeit, in der Daten gesäubert und sortiert werden, [nimmt rund 80% der 
 
 > Training a machine-learning system requires large numbers of carefully labelled examples, and those labels usually have to be applied by humans. Big tech firms often do the work internally. Companies that lack the required resources or expertise can take advantage of a growing outsourcing industry to do it for them.
 
-Jenseits des Labeling von Datasets findet diese Geisterarbeit – ein Begriff Mary L. Gray und Siddharth Suri mit ihrem Buch «Ghost Work» prägten – heute an allen Ecken und Enden des digitalen Lebens statt. Die Verifizierung neuer Bankaccounts, die [Moderation von Inhalten bei Facebook oder Twitter](https://www.bpb.de/mediathek/273199/the-cleaners) oder auf Plattformen wie Fiverr.
-
 Ein Prozess, den Kate Crawford, in Anlehnung an die [Potemkinschen Dörfer](https://de.wikipedia.org/wiki/Potemkinsches_Dorf), als _Potemkinsche KI_ bezeichnet:
 
 > We could think of this as a kind of Potemkin AI – little more than facades, designed to demonstrate to investors and a credulous media what an automated system would look like while actually relying on human labor in the background.
@@ -92,7 +90,9 @@ Ein Prozess, den Kate Crawford, in Anlehnung an die [Potemkinschen Dörfer](http
 
 Diese Menschen sorgen für den schönen Schein des Automatismus. Es soll von außen so aussehen, als würde alles vollautomatisch passieren, auch wenn es eigentlich menschliche Arbeit ist.
 
-Es ist in dieser Ausbeutung, in der der Kapitalismus zu sich selber findet. Den größten Profit aus den Angestellten zu pressen, ist eine Grundbedingung der kapitalistischen Ökonomie per se. Die Systeme um KI & Co. bilden dort keine Ausnahme, sondern formulieren diese Ausbeutung unter dem Deckmantel der Zukunft neu.
+Versuche der Konzerne an Daten zu kommen können auch anders aussehen. In Atlanta, Georgia, testete Google seine Gesichtserkennungssoftware. [Im Austauch gegen fünf Dollar wurden gezielt Schwarze Obdachlose angesprochen](https://12ft.io/proxy?q=https://www.nydailynews.com/news/national/ny-witness-saw-homeless-people-selling-face-scans-google-five-dollars-20191004-j6z2vonllnerpiuakt6wrp6l44-story.html). Die Gegenleistung? Ein 3D-Scans des Gesichts zu Google hochladen. Google kam vorher wiederholt in die Kritik, weil ihre Bilderkennunsgalgorithmen Schwarze Menschen für Gorillas oder ein [Thermometer in einer schwarzen Hand für eine Waffe](https://algorithmwatch.org/en/google-vision-racism/) halten. Immer tut es Google sehr leid, was passiert ist. Bis zum nächsten Mal. 2021 schließlich macht Google Hochglanzwerbung damit wie gut die neuen Android-Telephone Schwarze Gesichter erkennen können.
+
+Jenseits des Labeling von Datasets findet diese Geisterarbeit – ein Begriff Mary L. Gray und Siddharth Suri mit ihrem Buch «Ghost Work» prägten – heute an allen Ecken und Enden des digitalen Lebens statt. Die Verifizierung neuer Bankaccounts, die [Moderation von Inhalten bei Facebook oder Twitter](https://www.bpb.de/mediathek/273199/the-cleaners) oder auf Plattformen wie Fiverr.
 
 Dies alles führt vorerst nicht dazu, dass uns Maschinen uns die Arbeit wegnehmen. [Wie Mary L. Gray im Interview mit dem Standard sagt](https://www.derstandard.at/story/2000124843896/klick-fuer-klick-zum-hungerlohn-das-digitale-prekariat-waechst):
 
@@ -100,11 +100,9 @@ Dies alles führt vorerst nicht dazu, dass uns Maschinen uns die Arbeit wegnehme
 
 Eine Perspektive, die auch Simon Schaupp betont, wenn er von einer Abwertung der Arbeit mit einer einhergehenden Migrantisierung der Stellen spricht.
 
-Versuche der Konzerne an Daten zu kommen können auch anders aussehen. In Atlanta, Georgia, testete Google seine Gesichtserkennungssoftware. [Im Austauch gegen fünf Dollar wurden gezielt Schwarze Obdachlose angesprochen](https://12ft.io/proxy?q=https://www.nydailynews.com/news/national/ny-witness-saw-homeless-people-selling-face-scans-google-five-dollars-20191004-j6z2vonllnerpiuakt6wrp6l44-story.html). Die Gegenleistung? Ein 3D-Scans des Gesichts zu Google hochladen. Google kam vorher wiederholt in die Kritik, weil ihre Bilderkennunsgalgorithmen Schwarze Menschen für Gorillas oder ein [Thermometer in einer schwarzen Hand für eine Waffe](https://algorithmwatch.org/en/google-vision-racism/) halten. Immer tut es Google sehr leid, was passiert ist. Bis zum nächsten Mal. 2021 schließlich macht Google Hochglanzwerbung damit wie gut die neuen Android-Telephone Schwarze Gesichter erkennen können.
+Es ist in dieser Ausbeutung, in der der Kapitalismus zu sich selber findet. Den größten Profit aus den Angestellten zu pressen, ist eine Grundbedingung der kapitalistischen Ökonomie per se. Die Systeme um KI & Co. bilden dort keine Ausnahme, sondern formulieren diese Ausbeutung unter dem Deckmantel der Zukunft neu.
 
 ### Frühkapitalismus im digitalen Gewand
-
-Als drittes haben wir Arbeitsplätze, die von Algorithmen überwacht werden, etwa die Pick-Rate in Amazons Lagerhäusern. Rider:innen bei Lieferdiensten wie Lieferando, denen per Algorithmus Aufträge zugeteilt werden. Oder am Fließband, an dem der Vorarbeiter durch Bildschirme mit Zielzeiten ersetzt wurde.
 
 Am 25. März 1911 [brannte in Manhattan die Triangle Shirtwaist Factory](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire). 146 Arbeiter:innen starben in den Flammen, oder als sie aus dem brennenden Gebäude auf die Straßen sprangen. Die Ausgänge der Fabrik waren während der Arbeitszeit verschlossen, die Fabrik wurde zur Todesfalle. Die meisten der Toten waren Migrant:innen.
 
@@ -123,16 +121,16 @@ Wenn etwas an diesem Zitat veraltet scheint, dann dass man heutzutage das Gefüh
 
 Die Tendenz des Kapitals von Fordismus über Taylorismus den Produktionsprozess effektiver und effektiver zu gestalten, stellte die Arbeiterbewegung Streiks und Organisierung entgegen. Nicht ohne Erfolg. Reduzierung der Wochenarbeitstunden, soziale Absicherung, unbefristete Arbeitsverträge usw. sind nur durch starke gewerkschaftliche Bewegungen und den Willen zum Widerspruch entstanden.
 
-In der Gig-Economy und Amazons Warenhäusern sehen wir heute, dass all diese Errungenschaften – inklusive des Rechts zur gewerkschaftlichen Organisierung – unter stetigem Angriff steht und verteidigt bzw. zurückerobert werden muss.
+In der Gig-Economy und Amazons Warenhäusern sehen wir heute, dass all diese Errungenschaften – inklusive des Rechts zur gewerkschaftlichen Organisierung – unter stetigem Angriff stehen und verteidigt bzw. zurückerobert werden müssen.
 
-Nicht viel hat sich geändert, es scheint nur neu.
+Nicht viel hat sich geändert, es scheint nur neu:
 
 > Doch was als radikal neue Form der Arbeit daher kommt, ist im Licht der historischen Entwicklung oftmals mehr eine Wiederkehr früherer Arbeitsverhältnisse. Denn die Nutzung der Arbeitskraft durch die Unternehmen nur bei tatsächlichem Bedarf, der Stücklohn und die Tatsache, dass die Arbeitenden ihre eigenen Arbeitsmittel zur Verfügung stellen müssen, sind keineswegs neu und vielmehr so alt wie der Kapitalismus selbst. Konkret gleicht die digitalisierte Kurierarbeit wie auch viele andere Arten der Plattformarbeit dem proto-industriellen Verlagssystem der frühen Industrialisierung, das bereits im 19. Jahrhundert mit dem Begriff der «prekären Arbeit» gekennzeichnet wurde.
 > -- [Heiner Heiland – Zurück in die Zukunft](https://www.rosalux.de/publikation/id/39921/zurueck-in-die-zukunft-1)
 
-Diese Wiederkehr wird zur Farce, wenn Amazon, Apple oder Google sich berüchtigter Unternehmen wie den [Pinkertons](https://newrepublic.com/article/147619/pinkertons-still-never-sleep) bedient, um [Angestellte und Umweltaktivist:innen zu überwachen](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements).
+Diese Wiederkehr wird zur Farce, wenn Amazon, Apple oder Google sich berüchtigter Unternehmen wie den [Pinkertons](https://newrepublic.com/article/147619/pinkertons-still-never-sleep) bedienen, um [Angestellte und Umweltaktivist:innen zu überwachen](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements) oder das [Textbuch Union Busting durchspielen](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s?t=1640517368010).
 
-Simon Schaupp bezeichnet diese durch Algorithmen überwachten Arbeitsprozesse unter dem Begriff der «kybernetischen Verdichtung», durch die fortschreitenden technischen Möglichkeiten kommt es zu einer systematischen Überwachung des Produktionsprozesses.
+Simon Schaupp beschreibt diese durch Algorithmen überwachten Arbeitsprozesse unter mit Begriff der «kybernetischen Verdichtung». Durch die fortschreitenden technischen Möglichkeiten kommt es zu einer systematischen Überwachung des Produktionsprozesses.
 
 In extrem arbeitsintensiven Branchen wie Lieferdiensten oder Logistik führt dies dazu, dass das Gegenteil einer Vollautomatisierung passiert. Immer und immer mehr Menschen werden eingestellt, um die Prozesse aufrechtzuerhalten. [Amazon hat seit Anfang 2020 670.000 Arbeiter:innen eingestellt](https://www.statista.com/chart/7581/amazons-global-workforce/), um mit dem gesteigerten Auftragsvolumen während der Pandemie mitzuhalten.
 
@@ -158,11 +156,11 @@ Man muss die Pathetik nicht teilen, aber am Ende bleibt es wie Engels es vorauss
 
 Während der körperliche und geistige Tribut, den die Algorithmen in den Warenhäusern fordern, recht offensichtlich ist, gilt dies nicht in allen Bereichen des überwachten Arbeitens.
 
-Bei Lieferdiensten etwa bleibt zum Großteil verborgen welche Rolle die Algorithmen spielen und warum. Die Arbeiter:innen wissen demnach auch nicht, wie ihre Aktionen sich auf die zukünftige Arbeitsteilung auswirken. Ein Beispiel hierfür ist die immer wiederkehrende These von Gig-Worker:innen bei Lieferando & Co., dass es schlecht sei Lieferaufträge nicht anzunehmen.
+Bei Lieferdiensten etwa bleibt zum Großteil verborgen welchen Einfluss die Algorithmen haben. Die Arbeiter:innen wissen nicht, wie ihre Aktionen sich auf die zukünftige Arbeitseinteilung auswirken. Ein Beispiel hierfür ist die immer wiederkehrende These von Gig-Worker:innen bei Lieferando & Co., dass es schlecht sei Lieferaufträge nicht anzunehmen.
 
 Beweise dafür oder dagegen kann es nicht geben, solange die Algorithmen und gesammelten Daten nicht zugänglich gemacht werden. In seinem Vortrag [Die soziale Konstruktion von Algorithmen](https://media.ccc.de/v/fiffkon2021-161-die-soziale-konstruktion-von-algorithmen#t=1298) zitiert Heiner Heiland einen Manager eines Lieferdiensts, der sagt, dass der benutzte Algorithmus «sehr dumm» war und immer die nächste:n Fahrer:in gewählt hat. Aber selbst wenn der Algorithmus dumm war oder ist, gibt es keine Garantie, dass er es bleibt. Oder der Manager nicht von Anfang an gelogen hat.
 
-Vor allem, wenn andere Firmen Produktivität als Teil ihrer Algorithmen implementiert haben. [Deliveroo wurde in Italien verurteilt](https://techcrunch.com/2021/01/04/italian-court-rules-against-discriminatory-deliveroo-rider-ranking-algorithm/), weil deren Algorithmus nicht zwischen «unproduktiven» Arbeiter:innen und jenen, die krank waren oder streikten, unterschied.
+Grund zum Zweifeln gibt es umso mehr, wenn andere Firmen Produktivität als Teil ihrer Algorithmen implementiert haben. [Deliveroo wurde in Italien verurteilt](https://techcrunch.com/2021/01/04/italian-court-rules-against-discriminatory-deliveroo-rider-ranking-algorithm/), weil deren Algorithmus nicht zwischen «unproduktiven» Arbeiter:innen und jenen, die krank waren oder streikten, unterschied.
 
 Man kann es nicht wissen, weil die Plattformen, wie sich nennen, die einzigen sind, die die Daten haben.
 
@@ -192,19 +190,19 @@ Walter Benjamin berichtet über die Juni-Revolution in Paris:
 
 Am Ende der 1920er Jahre baute Henry Ford eine Stadt mitten im brasilianischen Dschungel, um Kautschuk für seine Autos abzubauen. [Das Projekt lief nie wirklich gut](https://www.theguardian.com/cities/2016/aug/19/lost-cities-10-fordlandia-failure-henry-ford-amazon). Kautschuk wurde in Fordlandia nie angebaut. Im Dezember 1930 wurde während eines Aufstands neben allerlei Infrastruktur auch die Stechuhr zerstört.
 
-All diese Formen der Auseinandersetzung erfordern eine Organisation, ein Bewusstsein dafür, dass, wie Engels es in \<cite\>Die Lage der arbeitenden Klasse in England\</cite\> sagte,
+All diese Formen der Auseinandersetzung erfordern eine Organisation, ein Bewusstsein dafür, dass, wie Engels es in <cite>Die Lage der arbeitenden Klasse in England</cite> sagte,
 
 > die Herrschaft der Bourgeoisie nur auf der Konkurrenz unter sich beruht, d.h. auf der Zersplitterung des Proletariats.
 
-Die Zeiten der großen proletarischen Bewegungen mögen vorbei sein. Die Bestrebungen zur gewerkschaftlicher Organisierung, die den Lügen der herrschenden Klasse nicht mehr glaubt, sei es in den Warenhäusern von Amazon oder Gorillas, zeigen dass die Zeiten nicht vorbei sein müssen. So sehr Engels’ Hoffnung in den Aufstand der Arbeiter:innen und einen gegebenen Lauf der Geschichte aus heutiger Sicht naiv wirken mögen, so wenig ist die Zukunft zwangsläufig kapitalistisch.
+Es ist diese Zersplitterung des Proletariats, die in der Zeit der kybernetischen Verdichtung auf die Spitze getrieben wird. Organisierung soll so unterbunden werden, der einzige Zweck der Arbeiter:in ist es mehr und mehr Geld einzubringen.
+
+Soviel erstmal zu den veränderten Arbeitsprozessen. Wie wir gesehen haben, nehmen uns die Roboter die Arbeit (vorerst) nicht weg, sondern verdichten sie zugunsten des Kapitals.
 
 ### Die Roboter geben uns die Arbeit nicht
 
-Eine der großen Angsterzählungen unserer Zeit ist, dass «die Maschinen» uns die Arbeit wegnehmen möchten. Automatisierung, so heißt es, wird uns alle über kurz oder lang arbeitslos machen. Im Folgenden geht es um die Transformation des Arbeitsplatzes und der Arbeit. Inwiefern verändert sich die Arbeit und wann sind wir alle arbeitslos?
-
 Neben einer Veränderung der Arbeit selber hat KI aber auch einen zunehmen Einfluss auf den Zugang zu Arbeit. Eines der Felder, in denen Algorithmen wie von Zauberhand alle Probleme lösen sollen, ist die Suche nach geeignetem Personal. Wie Reuters 2018 berichtete, musste Amazon [einen Algorithmus einstampfen, der Bewerbungen analysiert hat](https://www.reuters.com/article/us-amazon-com-jobs-automation-insight/amazon-scraps-secret-ai-recruiting-tool-that-showed-bias-against-women-idUSKCN1MK08G). Weil in der Vergangenheit vor allem weiße Männer in Engineering-Stellen eingestellt wurden, kam der Algorithmus zum Schluss, dass Frauen ungeeignet seien. Als Amazon den Faktor Geschlecht ausgeschlossen hat, griff der Algorithmus auf Faktoren wie Teilnahme in einem Schachclub für Frauen oder Teilnahme in Frauenstudien.
 
-[Bis heute](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3547922) ist dies [ein ungelöstes Problem](https://www.bbc.com/news/business-55932977). Deniz Erden hat sich in ihrem Beitrag \<cite\>KI und Beschäftigung\</cite\> in [Wenn KI, dann feministisch](https://netzforma.org/publikation-wenn-ki-dann-feministisch-impulse-aus-wissenschaft-und-aktivismus) ausführlich mit dem Thema beschäftigt, es war auch [Fokus mehrerer Folgen des In Machines We Trust-Podcasts](https://www.technologyreview.com/2021/08/04/1030513/podcast-beating-the-ai-hiring-machines/) des MIT Technology Review.
+[Bis heute](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3547922) ist dies [ein ungelöstes Problem](https://www.bbc.com/news/business-55932977). Deniz Erden hat sich in ihrem Beitrag <cite>KI und Beschäftigung</cite> in [Wenn KI, dann feministisch](https://netzforma.org/publikation-wenn-ki-dann-feministisch-impulse-aus-wissenschaft-und-aktivismus) ausführlich mit dem Thema beschäftigt, es war auch [Fokus mehrerer Folgen des In Machines We Trust-Podcasts](https://www.technologyreview.com/2021/08/04/1030513/podcast-beating-the-ai-hiring-machines/) des MIT Technology Review.
 
 ## Künstliche Ideologie
 
@@ -240,7 +238,7 @@ Auch für Forscher:innen wird es immer unmöglicher ihre Forschung zu betreiben,
 
 Neben der Rechenleistung, sind auch die meisten [Konferenzen abhängig von Sponsoren-Geldern](https://arxiv.org/abs/2009.13676).
 
-Was für Konsequenzen diese Kontrolle für unabhängige Forschung hat, zeigt [die Kündigung von Timnit Gebru](https://venturebeat.com/2020/12/03/google-ai-ethics-co-lead-timnit-gebru-says-she-was-fired-over-an-email/). Gebru war bis Ende 2020 Co-Lead eines Google Teams, das an ethischer KI geforscht hat. Als eine der angesehensten Forscherinnen in ihrem Feld, wurde sie offiziell entlassen, weil sie eine Mail an Mailingliste geschickt hat. Gebru sagt, dass sie aufgefordert wurde, das Paper \<cite\>[On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922)\</cite\> zurückzuhalten.
+Was für Konsequenzen diese Kontrolle für unabhängige Forschung hat, zeigt [die Kündigung von Timnit Gebru](https://venturebeat.com/2020/12/03/google-ai-ethics-co-lead-timnit-gebru-says-she-was-fired-over-an-email/). Gebru war bis Ende 2020 Co-Lead eines Google Teams, das an ethischer KI geforscht hat. Als eine der angesehensten Forscherinnen in ihrem Feld, wurde sie offiziell entlassen, weil sie eine Mail an Mailingliste geschickt hat. Gebru sagt, dass sie aufgefordert wurde, das Paper <cite>[On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? 🦜](https://dl.acm.org/doi/10.1145/3442188.3445922)</cite> zurückzuhalten.
 
 Das Papier untersucht die Auswirkungen von Large Language Models, KI-Modellen, die Sprache imitieren, auf die Umwelt und argumentiert, dass solche Modelle wie GPT-3 immer wieder Stereotype reproduzieren und toxische Sprache generieren, auch wenn die Inputs nicht toxisch sind.
 
@@ -252,20 +250,20 @@ Im Februar feuerte [Google schließlich Margaret Mitchell](https://www.theguardi
 
 Dass führende Figuren in ihren Feldern nicht sicher sind, sendet ein klares Signal an den Rest der Forscher:innen: «Benehmt euch, oder ihr seid raus.»
 
-In \<cite\>Die Lage der arbeitenden Klasse in England\</cite\> unternahm Engels den Versuch die «geschichtliche Bedeutung der Industrie» zu verstehen. Die Kohleminen und Fabriken waren die Industrie seiner Zeit. Er stellte fest:
+In <cite>Die Lage der arbeitenden Klasse in England</cite> unternahm Engels den Versuch die «geschichtliche Bedeutung der Industrie» zu verstehen. Die Kohleminen und Fabriken waren die Industrie seiner Zeit. Er stellte fest:
 
 > [Die Zentralisierung] erfordert große Kapitalien, mit denen sie kolossale Etablissements errichtet und dadurch die kleine, handwerksmäßige Bourgeoisie ruiniert – und mit denen sie sich die Naturkräfte dienst macht, um den einzelnen Handarbeiter aus dem Markte zu schlagen.
 > -- Friedrich Engels – Die Lage der arbeiten Klasse in England
 
 Die Arbeit und Produktion wurde an wenigen Orten gebündelt. Mit der Zentralisierung der Rechenleistung und Datensammlung sehen wir eine erneute Zentralisierung. Es sind nur nicht mehr die Kohlebarone und Pfeffersäcke, die sie antreiben.
 
-In \<cite\>The Steep Cost of Capture\</cite\> zieht Meredith Whittaker Parallelen zwischen der momentanen Situation und dem Kalten Krieg. Sie argumentiert, dass der Wettlauf zwischen den USA und der Sowjetunion einen ähnlichen Einfluss auf die Forschung hatte wie die heutige Übernahme der Forschung durch Google & Co.
+In <cite>The Steep Cost of Capture</cite> zieht Meredith Whittaker Parallelen zwischen der momentanen Situation und dem Kalten Krieg. Sie argumentiert, dass der Wettlauf zwischen den USA und der Sowjetunion einen ähnlichen Einfluss auf die Forschung hatte wie die heutige Übernahme der Forschung durch Google & Co.
 
 ### Technologie & Militär
 
 Ein Teil dieser Geschichte ist auch, dass Geschäfte mit dem Militär für «proud patriotic companies» wie Google oder Palantir zum guten Ton gehören. Das nicht nur in den USA. In China, Israel, Russland und der EU läuft ein simultaner Wettkampf um die Hoheit im digitalen Wettrüsten.
 
-Die Geschichte der Zusammenarbeit ist nicht neu. Das \<abbr\>ARPANET\</abbr\>, der Vorläufer des heutigen Internets, ist eine Ausgründung des im Kalten Kriegs gegründeten Advanced Research Projects Agency (\<abbr\>ARPA\</abbr\>) und des US-amerikanischen Verteidigungsministeriums. Das Internet ist keine Erfindung, die sich Militärs zunutze machen, es ist eine Erfindung des Militärs.
+Die Geschichte der Zusammenarbeit ist nicht neu. Das <abbr>ARPANET</abbr>, der Vorläufer des heutigen Internets, ist eine Ausgründung des im Kalten Kriegs gegründeten Advanced Research Projects Agency (<abbr>ARPA</abbr>) und des US-amerikanischen Verteidigungsministeriums. Das Internet ist keine Erfindung, die sich Militärs zunutze machen, es ist eine Erfindung des Militärs.
 
 Nicht ohne Widerstand. 2018 [kam Google unter enormen Druck](https://www.forbes.com/sites/janetwburns/2018/04/10/google-employees-denounce-companys-military-drone-work-in-letter-to-ceo/?sh=16100402ef0d), als es mit dem Pentagon zusammen Waffensysteme entwickeln wollte. Kurze Zeit später wurde bekanntgegeben, dass [der Vertrag mit dem Pentagon nicht verlängert wird](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html). Außerdem hat Google sich selber [Auflagen zum Umgang mit künstlicher Intelligenz](https://www.wired.com/story/google-sets-limits-on-its-use-of-ai-but-allows-defense-work/) gesetzt. In den vergangenen drei Jahr hat Google nichtsdestoweniger [fleißig mit dem US-Militär zusammengearbeitet](https://www.wired.com/story/3-years-maven-uproar-google-warms-pentagon/).
 
@@ -366,7 +364,7 @@ Zwar werden wir alle von den Techniken der Datensammlung ins Visier genommen, ab
 
 Die staatliche Sammelwut hingegen trifft von vornherein nicht alle gleich. Zwar ist zum Beispiel das Speichern von Fingerabdrücken in Deutschland seit dem Sommer 2020 verpflichtend, gegen die Offenbarungseide, die etwas Hartz IV-Bezieher:innen oder Geflüchtete ablegen müssen, verblasst dies aber beinahe zur Randnote.
 
-Francesca Schmidt und Johanna Luise Mellentin folgern im Buch \<cite\>[Wenn KI, dann feministisch](https://netzforma.org/publikation-wenn-ki-dann-feministisch-impulse-aus-wissenschaft-und-aktivismus)\</cite\>:
+Francesca Schmidt und Johanna Luise Mellentin folgern im Buch <cite>[Wenn KI, dann feministisch](https://netzforma.org/publikation-wenn-ki-dann-feministisch-impulse-aus-wissenschaft-und-aktivismus)</cite>:
 
 > Wenn wir von staatlichen Eingriffen in die Privatsphäre sprechen, sehen wir, dass die Intensität dieser Eingriffe mit dem Grad der Abhängigkeit vom Staat zunimmt. So müssen etwa Hartz-4-Empfänger\*innen, Menschen mit Behinderung, Geflüchtete bzw. Asylsuchende mit wesentlich zahlreicheren und tiefergehenden Eingriffen rechnen, als Menschen die zu keiner dieser Gruppen oder anderen marginalisierten, stigmatisierten Gruppen gehören.
 
