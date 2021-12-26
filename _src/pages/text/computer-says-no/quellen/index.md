@@ -3,8 +3,9 @@ layout: 'layouts/post.njk'
 permalink: 'text/computer-says-no/quellen/'
 pageCSS: 'textDetail'
 post:
-  title: Computer says no – Quellen
+  title: Computer says no
   date: '2021-12-26'
+  contentIntro: Quellen
 ---
 
 Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).

@@ -77,8 +77,10 @@ module.exports = function (config) {
   })
 
   config.addFilter('md', (raw) => {
-    return md.render(raw)
-
+    if (typeof raw === 'string') {
+      return md.render(raw)
+    }
+    console.log(raw)
     // return `<div class="parsed">${result}</div>`
   })
 
