@@ -2,6 +2,7 @@
 layout: 'layouts/post.njk'
 permalink: 'text/computer-says-no/quellen/'
 pageCSS: 'textDetail'
+hidePaginationNav: true
 post:
   title: Computer says no
   date: '2021-12-26'
@@ -22,7 +23,7 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 
 ## Organisationen
 
-- [Algorithm Watch](https://algorithmwatch.org/)
+- [Algorithm Watch](https://algorithmwatch.org/en)
 - [Algorithmic Justice League](https://www.ajl.org/)
 - [AI Now Institute](https://ainowinstitute.org/)
 - [Data & Society](https://datasociety.net/)
@@ -46,11 +47,12 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [The Cleaners](https://www.bpb.de/mediathek/273199/the-cleaners)
 - [Klick für Klick zum Hungerlohn: Das digitale Prekariat wächst](https://www.derstandard.at/story/2000124843896/klick-fuer-klick-zum-hungerlohn-das-digitale-prekariat-waechst)
 - [Wie Häftlinge auf Klickfarmen Algorithmen trainieren](https://www.derstandard.at/story/2000101616635/wiehaeftlinge-auf-klickfarmen-algorithmen-trainieren)
+- [Simon Schaupp – Future Histories Podcast S02E07](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/)
 - [City worker saw homeless people lined up to get \$5 gift card for face scan uploaded to Google](https://12ft.io/proxy?q=https://www.nydailynews.com/news/national/ny-witness-saw-homeless-people-selling-face-scans-google-five-dollars-20191004-j6z2vonllnerpiuakt6wrp6l44-story.html)
 - [Google apologises for Photos app's racist blunder](https://www.bbc.com/news/technology-33347866)
 - [Google apologizes after its Vision AI produced racist results](https://algorithmwatch.org/en/google-vision-racism/)
 
-### Frühkapitalismus
+### Frühkapitalismus im digitalen Gewand
 
 - [Triangle Shirtwaist Factory fire](https://en.wikipedia.org/wiki/Triangle_Shirtwaist_Factory_fire)
 - [At least six people died after an Amazon warehouse in Illinois took a direct hit.](https://www.nytimes.com/2021/12/11/us/amazon-warehouse-deaths-tornado.html)
@@ -58,16 +60,15 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [ ‘ You Want Me to Die So You Can Get Your Slippers?’ Amazon Workers Say They’re Pressured to Work in Dangerous Weather](https://www.vice.com/en/article/qjbv4q/amazon-workers-say-theyre-pressured-to-work-in-dangerous-weather)
 - [How Amazon hid its safety crisis](https://revealnews.org/article/how-amazon-hid-its-safety-crisis/)
 - [Artificial Intelligence and the Rise of a New Social Class](https://econreview.berkeley.edu/artificial-intelligence-and-the-rise-of-a-new-social-class/)
-- [Simon Schaupp – Future Histories Podcast S02E07](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/)
 - [Zurück in die Zukunft – Kontrolle und Widerstand in der Plattformarbeit](https://www.rosalux.de/publikation/id/39921/zurueck-in-die-zukunft-1)
 - [The Constant Boss – Labor Under Digital Surveillance](https://datasociety.net/library/the-constant-boss/)
 - [Secret Amazon Reports Expose the Company’s Surveillance of Labor and Environmental Groups](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements)
-- [Google Illegally Fired And Spied On Workers Who Tried To Organize, Labor Agency Says](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s?t=1640517368010)
+- [Google Illegally Fired And Spied On Workers Who Tried To Organize, Labor Agency Says](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s)
 - [The Pinkertons Still Never Sleep](https://newrepublic.com/article/147619/pinkertons-still-never-sleep)
 - [In Amazon’s Flagship Fulfillment Center, the Machines Run the Show](https://www.bloomberg.com/news/features/2021-09-21/inside-amazon-amzn-flagship-fulfillment-center-where-machines-run-the-show)
 - [The Staggering Growth of Amazon’s Workforce](https://www.statista.com/chart/7581/amazons-global-workforce/)
 
-### Algorithmic Opacity
+### Gig-Work und algorithmische Undurchsichtigkeit
 
 - [Workers demand gig economy companies explain their algorithms](https://www.ft.com/content/95e7f150-b0f9-4602-8e5d-76a138b59851)
 - [Italian court rules against ‘discriminatory’ Deliveroo rider-ranking algorithm](https://techcrunch.com/2021/01/04/italian-court-rules-against-discriminatory-deliveroo-rider-ranking-algorithm/)
@@ -99,6 +100,12 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 ### Technologie & Militär
 
 - [(D)ARPA](https://en.wikipedia.org/wiki/DARPA)
+- [ Google’s Earth: how the tech giant is helping the state spy on us ](https://www.theguardian.com/news/2018/dec/20/googles-earth-how-the-tech-giant-is-helping-the-state-spy-on-us)
+- [Project Maven: Startups Backed By Google, Peter Thiel, Eric Schmidt And James Murdoch Are Building AI And Facial Recognition Surveillance Tools For The Pentagon](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-startups-backed-by-google-peter-thiel-eric-schmidt-and-james-murdoch-build-ai-and-facial-recognition-surveillance-for-the-defense-department/)
+- [Project Maven: Amazon And Microsoft Scored \$50 Million In Pentagon Surveillance Contracts After Google Quit](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-amazon-and-microsoft-get-50-million-in-pentagon-drone-surveillance-contracts-after-google/)
+- ['Music is being used as a weapon': Spotify users and artists react to CEO's €100 million investment in AI defence tech](https://ra.co/news/76439)
+- [How the U.S. Military Buys Location Data from Ordinary Apps](https://www.vice.com/en/article/jgqm5x/us-military-location-data-xmode-locate-x)
+- [Muslim Pro Stops Sharing Location Data After Motherboard Investigation](https://www.vice.com/en/article/g5bq89/muslim-pro-location-data-military-xmode)
 - [Die Bewaffnung von Drohnen für die Bundeswehr stoppen – autonome Waffensysteme ächten!](https://aiscientists4peace.org/)
 - [Internationale Gemeinschaft scheitert mit Ächtung von Killerrobotern](https://www.zeit.de/politik/ausland/2021-12/un-waffenkonvention-autonome-waffen-killerroboter-konferenz-genf)
 - [Hidden Pentagon Records Reveal Patterns of Failure in Deadly Airstrikes](https://www.nytimes.com/interactive/2021/12/18/us/airstrikes-pentagon-records-civilian-deaths.html)
@@ -124,6 +131,7 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [Clearview AI on track to win U.S. patent for facial recognition technology](https://www.politico.com/news/2021/12/04/clearview-ai-facial-recognition-523735)
 - [Großbritannien droht Clearview mit Millionenstrafe – Deutschland drückt sich](https://netzpolitik.org/2021/gesichtserkennung-grossbritannien-droht-clearview-mit-millionenstrafe-deutschland-drueckt-sich/)
 - [Big tech companies back away from selling facial recognition to police. That’s progress.](https://www.vox.com/recode/2020/6/10/21287194/amazon-microsoft-ibm-facial-recognition-moratorium-police)
+- [Facebook arbeitet weiter an Gesichtserkennung](https://netzpolitik.org/2021/die-treffendere-schlagzeile-facebook-arbeitet-weiter-an-gesichtserkennung/)
 - [Amazon extends moratorium on police use of facial recognition software](https://www.reuters.com/technology/exclusive-amazon-extends-moratorium-police-use-facial-recognition-software-2021-05-18/)
 - [ Civil society calls on the EU to put fundamental rights first in the AI Act ](https://algorithmwatch.org/en/eu-artificial-intelligence-act-for-fundamental-rights/)
 - [Crime Prediction Software Promised to Be Free of Biases. New Data Shows It Perpetuates Them](https://themarkup.org/prediction-bias/2021/12/02/crime-prediction-software-promised-to-be-free-of-biases-new-data-shows-it-perpetuates-them)
@@ -141,3 +149,7 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [Future Histories S02E02 - Frederike Kaltheuner zu Datafizierung und A.I. Snake Oil](https://futurehistories.podbean.com/e/s02e03-frederike-kaltheuner-zu-datensouveranitat-und-ai-snake-oil/)
 - [Wer sind wir? Warum künstliche Intelligenz immer ideologisch ist](https://www.republik.ch/2021/04/06/warum-kuenstliche-intelligenz-immer-ideologisch-ist)
 - [Casual Conversations Dataset](https://ai.facebook.com/datasets/casual-conversations-dataset/)
+
+### Was tun?
+
+- [Canary in a Coal Mine: How Tech Provides Platforms for Hate](https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/)

@@ -31,14 +31,16 @@
     <div class="text__body e-content">
       {{ content | safe }}
     </div>
-    <section role="region" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
-      <h2 id="pgntn-hdln" class="pagination-navigation__headline">Other things I’ve written</h2>
-      {% paginationItem 'previous',
-      pagination.href.previous,
-      articles.ownPosts %}
-      {% paginationItem 'next',
-      pagination.href.next,
-      articles.ownPosts %}
-    </section>
+    {% if hidePaginationNav !== true %}
+      <section role="region" class="pagination-navigation text__pagination" aria-labelledby="pgntn-hdln">
+        <h2 id="pgntn-hdln" class="pagination-navigation__headline">Other things I’ve written</h2>
+        {% paginationItem 'previous',
+        pagination.href.previous,
+        articles.ownPosts %}
+        {% paginationItem 'next',
+        pagination.href.next,
+        articles.ownPosts %}
+      </section>
+    {% endif %}
   </main>
 {% endblock %}

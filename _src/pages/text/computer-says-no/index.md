@@ -22,7 +22,7 @@ Abschließend werfen wir einen Blick auf Möglichkeiten und Bedingungen des Wide
 
 Ich werde im Folgenden verallgemeinernd von Künstlicher Intelligenz sprechen. Einigen meiner Leser:innen wird dies, zurecht, als grobe Kategorie vorkommen.
 
-Es geht auf einer rein technischen Ebene vor allem um _Machine Learning (ML),_ _Deep Learning,_ oder _Pattern Recognition_. Also um spezifische Subfelder von KI.
+Es geht auf einer rein technischen Ebene vor allem um _Machine Learning (ML),_ oder auch _Deep Learning_. Also um spezifische Subfelder von KI.
 
 Im technisch-akademischen Diskurs ist diese Unterscheidung wichtig. Im Falle einer Betrachtung wie der hier anstehenden birgt diese vermeintliche Unschärfe auch Vorteile, wie Kate Crawford in der Einführung ihres Buches <cite>Atlas of AI</cite> beschreibt:
 
@@ -58,7 +58,7 @@ Es gibt nur ein Problem: Durch diese Arbeit wird jeder Zusammenhang aus den Bild
 
 Von solchen Problemen unbeeindruckt, weil nicht wahrgenommen oder nicht als Problem verstanden wurde, wurden die Ergebnisse gespeichert und ImageNet von 2010–2017 in der ImageNet Large Scale Visual Recognition Challenge zur wettkampfförmigen Erforschung freigegeben.
 
-Es dauerte bis 2012 zur nächsten Revolution. In diesem Jahr gewannen Alex Krizhevsky und sein Team der Universität Toronto die Challenge in einem Tempo, das vorher unvorstellbar war. Ihr Geheimnis war nicht neu, aber wurde vorher nicht auf die Analyse großer Datensätze angewandt: Neurale Netze. Unter dem Alias Deep Learning wurden diese Netze in den folgenden Jahren und bis heute einer der tonangebenden Paradigmen im Machine Learning.
+Es dauerte bis 2012 zur nächsten Revolution. In diesem Jahr gewannen Alex Krizhevsky und sein Team der Universität Toronto die Challenge in einem Tempo, das vorher unvorstellbar war. Ihr Geheimnis war nicht neu, aber wurde vorher nicht auf die Analyse großer Datensätze angewandt: Neuronale Netze. Unter dem Alias Deep Learning wurden diese Netze in den folgenden Jahren und bis heute einer der tonangebenden Paradigmen im Machine Learning.
 
 ImageNet ist aber auf noch eine Art ein Vorreiter.
 
@@ -86,7 +86,7 @@ Die Vorarbeit, in der Daten gesäubert und sortiert werden, [nimmt rund 80% der 
 Ein Prozess, den Kate Crawford, in Anlehnung an die [Potemkinschen Dörfer](https://de.wikipedia.org/wiki/Potemkinsches_Dorf), als _Potemkinsche KI_ bezeichnet:
 
 > We could think of this as a kind of Potemkin AI – little more than facades, designed to demonstrate to investors and a credulous media what an automated system would look like while actually relying on human labor in the background.
-> -- Kate Crawford – Atlas of AI, p. 65
+> -- Kate Crawford – Atlas of AI, S. 65
 
 Diese Menschen sorgen für den schönen Schein des Automatismus. Es soll von außen so aussehen, als würde alles vollautomatisch passieren, auch wenn es eigentlich menschliche Arbeit ist.
 
@@ -98,7 +98,7 @@ Dies alles führt vorerst nicht dazu, dass uns Maschinen uns die Arbeit wegnehme
 
 > Wir sollten uns nicht davor fürchten, dass Menschen durch Technologie ersetzt, sondern dass sie entwertet werden.
 
-Eine Perspektive, die auch Simon Schaupp betont, wenn er von einer Abwertung der Arbeit mit einer einhergehenden Migrantisierung der Stellen spricht.
+Eine Perspektive, die auch Simon Schaupp betont, wenn er von einer [Abwertung der Arbeit mit einer einhergehenden Migrantisierung der Stellen spricht](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/).
 
 Es ist in dieser Ausbeutung, in der der Kapitalismus zu sich selber findet. Den größten Profit aus den Angestellten zu pressen, ist eine Grundbedingung der kapitalistischen Ökonomie per se. Die Systeme um KI & Co. bilden dort keine Ausnahme, sondern formulieren diese Ausbeutung unter dem Deckmantel der Zukunft neu.
 
@@ -109,26 +109,6 @@ Am 25. März 1911 [brannte in Manhattan die Triangle Shirtwaist Factory](https:/
 Am 10.12. tobe ein Tornado über Illinois. Amazon verlangte von seinen Angestellten zur Arbeit zu kommen. Abends wurde ein Amazon-Lagerhaus [von einem Tornado getroffen](https://www.nytimes.com/2021/12/11/us/amazon-warehouse-deaths-tornado.html). Jeff Bezos war damit beschäftigt an ein Leben im Weltraum zu denken, während das Lagerhaus kollabierte und sechs der Arbeiter:innen starben. Larry Vriden [schrieb kurz vor seinem Tod seiner Freundin](https://twitter.com/MorePerfectUS/status/1470513075489054720): «Well I’ll be home after the storm. Amazon won’t let us go.» Er kam nie wieder zu Hause an. [Unfälle und Gesundheitsprobleme](https://www.vice.com/en/article/qjbv4q/amazon-workers-say-theyre-pressured-to-work-in-dangerous-weather) kommen bei Amazon [immer wieder vor](https://revealnews.org/article/how-amazon-hid-its-safety-crisis/). In den USA lagen sie 2020 doppelt so hoch wie im Industriedurchschnitt.
 
 Inwiefern haben sich die Arbeitsverhältnisse in den letzten 140 Jahren verändert? Was ist Arbeit eigentlich in einer algorithmisierten Welt und sollten uns die Roboter nicht schon längst die Arbeit wegnehmen?
-
-In der Zeit des Frühkapitalismus gab es schon Bestrebungen zur Automatisierung und damit einhergehenden Kontrolle der Arbeiter:innen. Aus Sicht des Kapitals waren Arbeiter:innen schon immer ein notwendiges Übel. Ohne geht’s halt nicht, aber mit wird der Profit eingeschränkt.
-
-Engels’ zitiert schon 1844 Andrew Ure, dessen Hoffnung in die Produktivkraft der Maschine sich ohne Probleme auf die heutige Überhöhung der Robotisierung übertragen lässt:
-
-> In wenig Monaten schon war eine Maschine fertig, die dem Anscheine nach mit dem Denkvermögen, Gefühl und Takt des erfahrnen Arbeiters begabt war.
-> -- Andrew Ure – Philosophy of Manufactures
-
-Wenn etwas an diesem Zitat veraltet scheint, dann dass man heutzutage das Gefühl am liebsten gar nicht mehr hätte.
-
-Die Tendenz des Kapitals von Fordismus über Taylorismus den Produktionsprozess effektiver und effektiver zu gestalten, stellte die Arbeiterbewegung Streiks und Organisierung entgegen. Nicht ohne Erfolg. Reduzierung der Wochenarbeitstunden, soziale Absicherung, unbefristete Arbeitsverträge usw. sind nur durch starke gewerkschaftliche Bewegungen und den Willen zum Widerspruch entstanden.
-
-In der Gig-Economy und Amazons Warenhäusern sehen wir heute, dass all diese Errungenschaften – inklusive des Rechts zur gewerkschaftlichen Organisierung – unter stetigem Angriff stehen und verteidigt bzw. zurückerobert werden müssen.
-
-Nicht viel hat sich geändert, es scheint nur neu:
-
-> Doch was als radikal neue Form der Arbeit daher kommt, ist im Licht der historischen Entwicklung oftmals mehr eine Wiederkehr früherer Arbeitsverhältnisse. Denn die Nutzung der Arbeitskraft durch die Unternehmen nur bei tatsächlichem Bedarf, der Stücklohn und die Tatsache, dass die Arbeitenden ihre eigenen Arbeitsmittel zur Verfügung stellen müssen, sind keineswegs neu und vielmehr so alt wie der Kapitalismus selbst. Konkret gleicht die digitalisierte Kurierarbeit wie auch viele andere Arten der Plattformarbeit dem proto-industriellen Verlagssystem der frühen Industrialisierung, das bereits im 19. Jahrhundert mit dem Begriff der «prekären Arbeit» gekennzeichnet wurde.
-> -- [Heiner Heiland – Zurück in die Zukunft](https://www.rosalux.de/publikation/id/39921/zurueck-in-die-zukunft-1)
-
-Diese Wiederkehr wird zur Farce, wenn Amazon, Apple oder Google sich berüchtigter Unternehmen wie den [Pinkertons](https://newrepublic.com/article/147619/pinkertons-still-never-sleep) bedienen, um [Angestellte und Umweltaktivist:innen zu überwachen](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements) oder das [Textbuch Union Busting durchspielen](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s?t=1640517368010).
 
 Simon Schaupp beschreibt diese durch Algorithmen überwachten Arbeitsprozesse unter mit Begriff der «kybernetischen Verdichtung». Durch die fortschreitenden technischen Möglichkeiten kommt es zu einer systematischen Überwachung des Produktionsprozesses.
 
@@ -146,6 +126,24 @@ Gleichzeitig gilt aber auch, dass es
 > -- [Simon Schaupp – Future Histories Podcast S02E07](https://futurehistories.podbean.com/e/s02e07-simon-schaupp/)
 
 Dies passiert zum Beispiel in Logistikprozessen, die getracked werden, um sie durch eine KI zu ersetzen oder wenn Facharbeiter:innen die Systeme schreiben müssen, die sie schlußendlich abschaffen werden.
+
+In der Zeit des Frühkapitalismus gab es schon Bestrebungen zur Automatisierung und damit einhergehenden Kontrolle der Arbeiter:innen. Aus Sicht des Kapitals waren Arbeiter:innen schon immer ein notwendiges Übel. Ohne geht’s halt nicht, aber mit wird der Profit eingeschränkt.
+
+Engels’ zitiert schon 1844 Andrew Ure, dessen Hoffnung in die Produktivkraft der Maschine sich ohne Probleme auf die heutige Überhöhung der Robotisierung übertragen lässt:
+
+> In wenig Monaten schon war eine Maschine fertig, die dem Anscheine nach mit dem Denkvermögen, Gefühl und Takt des erfahrnen Arbeiters begabt war.
+> -- Andrew Ure – Philosophy of Manufactures
+
+Die Tendenz des Kapitals von Fordismus über Taylorismus den Produktionsprozess effektiver und effektiver zu gestalten, stellte die Arbeiterbewegung Streiks und Organisierung entgegen. Nicht ohne Erfolg. Reduzierung der Wochenarbeitstunden, soziale Absicherung, unbefristete Arbeitsverträge usw. sind nur durch starke gewerkschaftliche Bewegungen und den Willen zum Widerspruch entstanden.
+
+In der Gig-Economy und Amazons Warenhäusern sehen wir heute, dass all die Errungenschaften der Arbeiter:innenbewegung – inklusive des Rechts zur gewerkschaftlichen Organisierung – unter stetigem Angriff stehen und verteidigt bzw. zurückerobert werden müssen.
+
+Nicht viel hat sich geändert, es scheint nur neu:
+
+> Doch was als radikal neue Form der Arbeit daher kommt, ist im Licht der historischen Entwicklung oftmals mehr eine Wiederkehr früherer Arbeitsverhältnisse. Denn die Nutzung der Arbeitskraft durch die Unternehmen nur bei tatsächlichem Bedarf, der Stücklohn und die Tatsache, dass die Arbeitenden ihre eigenen Arbeitsmittel zur Verfügung stellen müssen, sind keineswegs neu und vielmehr so alt wie der Kapitalismus selbst. Konkret gleicht die digitalisierte Kurierarbeit wie auch viele andere Arten der Plattformarbeit dem proto-industriellen Verlagssystem der frühen Industrialisierung, das bereits im 19. Jahrhundert mit dem Begriff der «prekären Arbeit» gekennzeichnet wurde.
+> -- [Heiner Heiland – Zurück in die Zukunft](https://www.rosalux.de/publikation/id/39921/zurueck-in-die-zukunft-1)
+
+Diese Wiederkehr wird zur Farce, wenn Amazon, Apple oder Google sich berüchtigter Unternehmen wie den [Pinkertons](https://newrepublic.com/article/147619/pinkertons-still-never-sleep) bedienen, um [Angestellte und Umweltaktivist:innen zu überwachen](https://www.vice.com/en/article/5dp3yn/amazon-leaked-reports-expose-spying-warehouse-workers-labor-union-environmental-groups-social-movements) oder das [Textbuch Union Busting durchspielen](https://www.npr.org/2020/12/03/941860802/google-illegally-fired-and-spied-on-workers-who-tried-to-organize-labor-agency-s).
 
 Man muss die Pathetik nicht teilen, aber am Ende bleibt es wie Engels es voraussagte:
 
@@ -263,9 +261,13 @@ In <cite>The Steep Cost of Capture</cite> zieht Meredith Whittaker Parallelen zw
 
 Ein Teil dieser Geschichte ist auch, dass Geschäfte mit dem Militär für «proud patriotic companies» wie Google oder Palantir zum guten Ton gehören. Das nicht nur in den USA. In China, Israel, Russland und der EU läuft ein simultaner Wettkampf um die Hoheit im digitalen Wettrüsten.
 
-Die Geschichte der Zusammenarbeit ist nicht neu. Das <abbr>ARPANET</abbr>, der Vorläufer des heutigen Internets, ist eine Ausgründung des im Kalten Kriegs gegründeten Advanced Research Projects Agency (<abbr>ARPA</abbr>) und des US-amerikanischen Verteidigungsministeriums. Das Internet ist keine Erfindung, die sich Militärs zunutze machen, es ist eine Erfindung des Militärs.
+Die Geschichte der Zusammenarbeit ist nicht neu. Das </abbr>ARPANET</abbr>, der Vorläufer des heutigen Internets, ist eine Ausgründung des im Kalten Kriegs gegründeten Advanced Research Projects Agency (</abbr>ARPA</abbr>) und des US-amerikanischen Verteidigungsministeriums. Das Internet ist keine Erfindung, die sich Militärs zunutze machen, es ist eine Erfindung des Militärs.
+
+Für Google gehören Geschäfte mit amerikanischen Geheimdiensten, spätestens seit der Übernahme von Keyhole, [zum Kerngeschäft](https://www.theguardian.com/news/2018/dec/20/googles-earth-how-the-tech-giant-is-helping-the-state-spy-on-us).
 
 Nicht ohne Widerstand. 2018 [kam Google unter enormen Druck](https://www.forbes.com/sites/janetwburns/2018/04/10/google-employees-denounce-companys-military-drone-work-in-letter-to-ceo/?sh=16100402ef0d), als es mit dem Pentagon zusammen Waffensysteme entwickeln wollte. Kurze Zeit später wurde bekanntgegeben, dass [der Vertrag mit dem Pentagon nicht verlängert wird](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html). Außerdem hat Google sich selber [Auflagen zum Umgang mit künstlicher Intelligenz](https://www.wired.com/story/google-sets-limits-on-its-use-of-ai-but-allows-defense-work/) gesetzt. In den vergangenen drei Jahr hat Google nichtsdestoweniger [fleißig mit dem US-Militär zusammengearbeitet](https://www.wired.com/story/3-years-maven-uproar-google-warms-pentagon/).
+
+Das Loch, das Google in Project Maven hinterlassen hat, [wurde indes schnell gefüllt](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-startups-backed-by-google-peter-thiel-eric-schmidt-and-james-murdoch-build-ai-and-facial-recognition-surveillance-for-the-defense-department/). Rebellion Defense, gegründet unter der Schirmherrschaft des früheren Google Chefs Eric Schmidt, Palantir, Amazon und Microsoft [sprangen begeistert in die Lücke](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-amazon-and-microsoft-get-50-million-in-pentagon-drone-surveillance-contracts-after-google/).
 
 [Kürzlich machte Daniel Ek, Gründer von Spotify, Schlagzeilen](https://ra.co/news/76439), als er mit seinem Investment Fund 100 Millionen Dollar in das deutsche Tötungs-KI Startup Helsing investierte. Während sie sich auf die Fahne schreiben die freiheitlich-demokratische Grundordnung verteidigen zu wollen, sind die Mitglieder ihres Boards gut vernetzt im militärisch-industriellen Komplex.
 
@@ -274,6 +276,8 @@ Solche eine Zusammenarbeit kann auch ohne explizite Absicht sich dem Militär an
 In Deutschland kümmert sich seit 2017 das [Kommando Cyber- und Informationsraum](https://de.wikipedia.org/wiki/Kommando_Cyber-_und_Informationsraum) (CIR) und die Digitalisierung der Truppe. Man befindet sich knapp zwanzig Jahre nach dem Web 2.o mittlerweile selber in Ausbaustufe 2.0. Das Internet ist für uns alle Neuland.
 
 Aber mal ernsthaft: Die Entwicklung autonomer Waffensysteme unterliegt momentan keiner wirkungsvollen Kontrolle. Erst im Dezember 2021 scheiterten jahrelangen Verhandlungen. In der Logik von Ländern wie den USA, Großbritannien, Russland oder Israel [sei es «zu früh» für ein derartiges Moratorium](https://www.theatlantic.com/technology/archive/2021/09/i-weapons-are-third-revolution-warfare/620013/). Eine interessante Logik, die nur jenen einleuchtet, die finden es sei zu früh zu bremsen bevor man mit dem Auto in einen Baum rast.
+
+Autonome Waffensysteme sind keine theoretische Möglichkeit, sondern nur ein Softwareupdate entfernt. Weltweit sind solche Systeme in Entwicklung begriffen. Im Juni 2021 wurde in Libyen der vermutlich erste Angriff mit einem solchen, vollautonomen System durchgeführt[^2].
 
 Die deutsche Bundesregierung unter Olaf Scholz begibt sich indes auf Messers Schneide. Man wolle zwar bewaffnete Drohnen für die Bundeswehr anschaffen, mit diesen aber ethisch töten. Wem das beruhigend erscheint, sei dran erinnert, dass durch die rot-grüne Regierung unter Gerhard Schröder der erste [Angriffskrieg vom deutschen Boden seit 1945 geführt wurde](https://de.wikipedia.org/wiki/Kosovokrieg).
 
@@ -284,8 +288,6 @@ Im Appell der [AI Scientists for Peace](https://aiscientists4peace.org/), die si
 Vor zwei Wochen [hat die New York Times einen umfangreichen Bericht veröffentlicht](https://www.nytimes.com/interactive/2021/12/18/us/airstrikes-pentagon-records-civilian-deaths.html), der im Detail zeigt, wie schief der Drohnenkrieg schon läuft, wenn Menschen zugucken. Die Erzählung eines «präzisen Kriegs» ist eine Lüge und die, die ihn führen, wissen das.
 
 [Das Pentagon hat zugegeben](https://www.defenseone.com/technology/2021/12/air-force-targeting-ai-thought-it-had-90-success-rate-it-was-more-25/187437/), dass eines der KI-Targeting-Systeme der US Air Force Ziele zu nur fünfundzwanzig Prozent erkannt hat. Gleichzeitig berichtete das System selber von einer neunzigprozentigen Genauigkeit.
-
-Autonome Waffensysteme sind keine theoretische Möglichkeit, sondern nur ein Softwareupdate entfernt. Weltweit sind solche Systeme in Entwicklung begriffen. Im Juni 2021 wurde in Libyen der vermutlich erste Angriff mit einem solchen, vollautonomen System durchgeführt[^2].
 
 Unkontrolliertes Datensammeln, wie im Fall von Muslim Pro, führt in der Logik kriegerischer Auseinandersetzung zu unkontrollierten Zugriffen. Wenn es die Daten gibt, und Behörden oder Militär ihrer habhaft werden wollen, werden sie es schaffen.
 
@@ -383,8 +385,6 @@ Das Problem liegt aber nicht alleine auf staatlicher Ebene oder bei Unternehmen 
 
 Die Antworten waren ernüchternd. Nur Facebooks [Casual Conversations Dataset](https://ai.facebook.com/datasets/casual-conversations-dataset/) wurde als Beispiel genannt, in dem die Datenansammlung einvernehmlich geschah.
 
-Bis jetzt haben wir Algorithmen und Künstliche Intelligenz vor allem als etwas betrachtet, das den Menschen passiert. Als letztes blicken wir auf einen Aspekt der Kontrollgesellschaft, an dem die Menschen mit mehr oder weniger Vergnügen teilnehmen.
-
 ## Was tun?
 
 Die Geschichte der Künstlichen Intelligenz ist eine Geschichte der Missverständnisse. Meistens jenes, das Computer für eine Form der Menschlichkeit hält. Dass sich die menschliche Wahrnehmung auf rein mechanische Prozesse reduzieren lässt.
@@ -396,6 +396,11 @@ Nach einigen Jahren ging es wieder bergauf. In welcher KI-Jahreszeit wir uns ger
 Es ist illusorisch zu denken, dass man weitere Fortschritte in der Entwicklung verhindern könnte oder dass die großen IT-Firmen sich plötzlich besinnen und ihre Möglichkeiten nur noch zu «guten» Zwecken einsetzen würden. KI beschreibt und codifiziert die uns umgebende rassistische, kapitalistische Welt und gibt ihr den Anschein mathematischer Neutralität.
 
 Sie legt sich dabei wie eine Decke über die gesellschaftlichen Zusammenhänge, zerpflückt sie in Datenpunkte und fördert so ihre ideologische Verklärung. Dieses gilt es immer wieder zu verstehen und die Dinge unter der Decke zu fassen.
+
+Wir können den technologischen Fortschritt nicht aufhalten, aber wir müssen ihn unserem Verständnis anpassen. Nicht alles was gemacht werden kann, sollte gemacht werden:
+
+> Our technology is accelerating at a frightening rate, a rate faster than our reflective understanding of its impact.
+> -- [Tatiana Mac – Canary in a coal mine](https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/)
 
 Wir müssen Technologie aus der Herrschaft der Konzerne und ihrer vornehmlich männlich, weißen Vorstandsetagen entreißen, um zu dem Punkt zu kommen, an dem nicht immer wieder die Vergangenheit die Zukunft bestimmen soll, sondern wir die Zukunft gestalten können.
 
