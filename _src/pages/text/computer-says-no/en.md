@@ -389,7 +389,7 @@ The answers were sobering. Only Facebook's [Casual Conversations Dataset](https:
 
 ## What to do?
 
-The history of Artificial Intelligence is a history of misunderstandings. Mostly the one that mistakes computers for a form of humanity. That human perception can be reduced to purely mechanical processes.
+The history of artificial intelligence is a history of misunderstandings. Mostly the one that mistakes computers for a form of humanity. That human perception can be reduced to purely mechanical processes.
 
 The history of artificial intelligence is also one of setbacks and triumphs. The enthusiasm surrounding advances has repeatedly given way to so-called "AI winters".
 
@@ -402,15 +402,20 @@ In doing so, it lays itself like a blanket over the social contexts, picks them 
 We cannot stop technological progress, but we must adapt it to our understanding. Not everything that can be done should be done:
 
 > Our technology is accelerating at a frightening rate, a rate faster than our reflective understanding of its impact.
-> -- [Tatiana Mac - Canary in a coal mine](https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/)
+> -- [Tatiana Mac - Canary in a coal mine]
 
-We need to wrest technology from the domination of corporations and their predominantly male, white boardrooms to get to the point where it is not the past that should always determine the future, but we can shape the future.
+We need to wrest technology from the domination of corporations and their predominantly male, white boardrooms to get to the point where it is not always the past that should determine the future, but we who can shape the future.
 
-We cannot solve the problems without questioning the capital relation itself. The problems we face in the debate on artificial intelligence are embedded in capitalist domination, in sexism, in racism. As long as we do not focus our critique on the domination of people over people, we will only work on the symptoms of this domination again and again.
+> Contrary to big tech executives' cold-war style rhetoric about an arms race, what truly stifles innovation is the current arrangement where a few people build harmful technology and others constantly work to prevent harm, unable to find the time, space or resources to implement their own vision of the future.
+> -- [Timnit Gebru - For truly ethical AI, its research must be independent from big tech]
+
+We cannot solve the problems without questioning the capital relation itself.
+
+The problems we face in dealing with AI are embedded in capitalist domination, in sexism, in racism. As long as we do not focus our critique on the domination of people over people, we will only work on the symptoms of this domination again and again.
 
 A future based on solidarity and consideration instead of unconditional competition is possible.
 
-For only when we are good to ourselves can the machines be too.
+Only when we are good to ourselves can the machines be good to us.
 
 [^1]: Muslim Pro cancelled contract with X-Mode [a short time later](https://www.vice.com/en/article/g5bq89/muslim-pro-location-data-military-xmode).
 [^2]: [An overview](https://www.blaetter.de/ausgabe/2021/august/angriff-der-killerroboter-wenn-der-algorithmus-toetet) is provided by Blätter für deutsche und internationale Politik

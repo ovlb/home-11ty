@@ -8,7 +8,7 @@ post:
   contentIntro: Künstliche Intelligenz & Herrschaft
 ---
 
-Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die Slides können auf Notist eingesehen werden.
+Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die Slides können auf Notist eingesehen werden. Eine [englische Übersetzung](/text/computer-says-no-en/) ist verfügbar.
 
 ---
 
@@ -261,11 +261,11 @@ In <cite>The Steep Cost of Capture</cite> zieht Meredith Whittaker Parallelen zw
 
 Ein Teil dieser Geschichte ist auch, dass Geschäfte mit dem Militär für «proud patriotic companies» wie Google oder Palantir zum guten Ton gehören. Das nicht nur in den USA. In China, Israel, Russland und der EU läuft ein simultaner Wettkampf um die Hoheit im digitalen Wettrüsten.
 
-Die Geschichte der Zusammenarbeit ist nicht neu. Das </abbr>ARPANET</abbr>, der Vorläufer des heutigen Internets, ist eine Ausgründung des im Kalten Kriegs gegründeten Advanced Research Projects Agency (</abbr>ARPA</abbr>) und des US-amerikanischen Verteidigungsministeriums. Das Internet ist keine Erfindung, die sich Militärs zunutze machen, es ist eine Erfindung des Militärs.
+Die Geschichte der Zusammenarbeit ist nicht neu. Das <abbr>ARPANET</abbr>, der Vorläufer des heutigen Internets, ist eine Ausgründung des im Kalten Kriegs gegründeten Advanced Research Projects Agency (<abbr>ARPA</abbr>) und des US-amerikanischen Verteidigungsministeriums. Das Internet ist keine Erfindung, die sich Militärs zunutze machen, es ist eine Erfindung des Militärs.
 
 Für Google gehören Geschäfte mit amerikanischen Geheimdiensten, spätestens seit der Übernahme von Keyhole, [zum Kerngeschäft](https://www.theguardian.com/news/2018/dec/20/googles-earth-how-the-tech-giant-is-helping-the-state-spy-on-us).
 
-Nicht ohne Widerstand. 2018 [kam Google unter enormen Druck](https://www.forbes.com/sites/janetwburns/2018/04/10/google-employees-denounce-companys-military-drone-work-in-letter-to-ceo/?sh=16100402ef0d), als es mit dem Pentagon zusammen Waffensysteme entwickeln wollte. Kurze Zeit später wurde bekanntgegeben, dass [der Vertrag mit dem Pentagon nicht verlängert wird](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html). Außerdem hat Google sich selber [Auflagen zum Umgang mit künstlicher Intelligenz](https://www.wired.com/story/google-sets-limits-on-its-use-of-ai-but-allows-defense-work/) gesetzt. In den vergangenen drei Jahr hat Google nichtsdestoweniger [fleißig mit dem US-Militär zusammengearbeitet](https://www.wired.com/story/3-years-maven-uproar-google-warms-pentagon/).
+Nicht ohne Widerstand. 2018 [kam Google unter enormen Druck](https://www.forbes.com/sites/janetwburns/2018/04/10/google-employees-denounce-companys-military-drone-work-in-letter-to-ceo/?sh=16100402ef0d), als es mit dem Pentagon im sogenannten [Project Maven](https://www.fastcompany.com/90342971/how-the-pentagon-is-bringing-algorithmic-spycraft-and-big-tech-to-war) zusammen autonome Waffensysteme entwickelt. Kurze Zeit später wurde bekanntgegeben, dass [der Vertrag mit dem Pentagon nicht verlängert wird](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html). Außerdem hat Google sich selber [Auflagen zum Umgang mit künstlicher Intelligenz](https://www.wired.com/story/google-sets-limits-on-its-use-of-ai-but-allows-defense-work/) gesetzt. In den vergangenen drei Jahr hat Google nichtsdestoweniger [fleißig mit dem US-Militär zusammengearbeitet](https://www.wired.com/story/3-years-maven-uproar-google-warms-pentagon/).
 
 Das Loch, das Google in Project Maven hinterlassen hat, [wurde indes schnell gefüllt](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-startups-backed-by-google-peter-thiel-eric-schmidt-and-james-murdoch-build-ai-and-facial-recognition-surveillance-for-the-defense-department/). Rebellion Defense, gegründet unter der Schirmherrschaft des früheren Google Chefs Eric Schmidt, Palantir, Amazon und Microsoft [sprangen begeistert in die Lücke](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-amazon-and-microsoft-get-50-million-in-pentagon-drone-surveillance-contracts-after-google/).
 
@@ -404,7 +404,12 @@ Wir können den technologischen Fortschritt nicht aufhalten, aber wir müssen ih
 
 Wir müssen Technologie aus der Herrschaft der Konzerne und ihrer vornehmlich männlich, weißen Vorstandsetagen entreißen, um zu dem Punkt zu kommen, an dem nicht immer wieder die Vergangenheit die Zukunft bestimmen soll, sondern wir die Zukunft gestalten können.
 
-Wir können die Probleme nicht lösen, ohne das Kapitalverhältnis an sich zu hinterfragen. Die Probleme, die sich uns in der Auseinandersetzung mit Künstlicher Intelligenz zeigen, sind eingebettet in kapitalistische Herrschaft, in Sexismus, in Rassismus. Solange wir die Herrschaft der Menschen über die Menschen nicht in den Fokus unserer Kritik rücken, werden wir uns immer und wieder nur an den Symptomen dieser Herrschaft abarbeiten.
+> Contrary to big tech executives’ cold-war style rhetoric about an arms race, what truly stifles innovation is the current arrangement where a few people build harmful technology and others constantly work to prevent harm, unable to find the time, space or resources to implement their own vision of the future.
+> -- [Timnit Gebru – For truly ethical AI, its research must be independent from big tech](https://www.theguardian.com/commentisfree/2021/dec/06/google-silicon-valley-ai-timnit-gebru)
+
+Wir können die Probleme nicht lösen, ohne das Kapitalverhältnis an sich zu hinterfragen.
+
+Die Probleme, die sich uns in der Auseinandersetzung mit Künstlicher Intelligenz zeigen, sind eingebettet in kapitalistische Herrschaft, in Sexismus, in Rassismus. Solange wir die Herrschaft der Menschen über die Menschen nicht in den Fokus unserer Kritik rücken, werden wir uns immer und wieder nur an den Symptomen dieser Herrschaft abarbeiten.
 
 Eine Zukunft, die auf Solidarität und Rücksichtnahme statt auf bedingungsloser Konkurrenz aufbaut ist möglich.
 

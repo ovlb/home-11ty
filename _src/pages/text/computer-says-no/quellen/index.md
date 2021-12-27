@@ -59,6 +59,7 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [Tweet von More Perfect Union](https://twitter.com/MorePerfectUS/status/1470513075489054720)
 - [ ‘ You Want Me to Die So You Can Get Your Slippers?’ Amazon Workers Say They’re Pressured to Work in Dangerous Weather](https://www.vice.com/en/article/qjbv4q/amazon-workers-say-theyre-pressured-to-work-in-dangerous-weather)
 - [How Amazon hid its safety crisis](https://revealnews.org/article/how-amazon-hid-its-safety-crisis/)
+- [Amazon Leaks](https://revealnews.org/podcast/amazon-leaks/)
 - [Artificial Intelligence and the Rise of a New Social Class](https://econreview.berkeley.edu/artificial-intelligence-and-the-rise-of-a-new-social-class/)
 - [Zurück in die Zukunft – Kontrolle und Widerstand in der Plattformarbeit](https://www.rosalux.de/publikation/id/39921/zurueck-in-die-zukunft-1)
 - [The Constant Boss – Labor Under Digital Surveillance](https://datasociety.net/library/the-constant-boss/)
@@ -101,6 +102,9 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 
 - [(D)ARPA](https://en.wikipedia.org/wiki/DARPA)
 - [ Google’s Earth: how the tech giant is helping the state spy on us ](https://www.theguardian.com/news/2018/dec/20/googles-earth-how-the-tech-giant-is-helping-the-state-spy-on-us)
+- [How Big Tech is helping build the Pentagon’s all-seeing eye-in-the-sky](https://www.fastcompany.com/90342971/how-the-pentagon-is-bringing-algorithmic-spycraft-and-big-tech-to-war)
+- [Google Employees Denounce Company's Military Drone Work In Letter To CEO](https://www.forbes.com/sites/janetwburns/2018/04/10/google-employees-denounce-companys-military-drone-work-in-letter-to-ceo/?sh=3185a90eef0d)
+- [Google Will Not Renew Pentagon Contract That Upset Employees](https://www.nytimes.com/2018/06/01/technology/google-pentagon-project-maven.html)
 - [Project Maven: Startups Backed By Google, Peter Thiel, Eric Schmidt And James Murdoch Are Building AI And Facial Recognition Surveillance Tools For The Pentagon](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-startups-backed-by-google-peter-thiel-eric-schmidt-and-james-murdoch-build-ai-and-facial-recognition-surveillance-for-the-defense-department/)
 - [Project Maven: Amazon And Microsoft Scored \$50 Million In Pentagon Surveillance Contracts After Google Quit](https://www.forbes.com/sites/thomasbrewster/2021/09/08/project-maven-amazon-and-microsoft-get-50-million-in-pentagon-drone-surveillance-contracts-after-google/)
 - ['Music is being used as a weapon': Spotify users and artists react to CEO's €100 million investment in AI defence tech](https://ra.co/news/76439)
@@ -137,6 +141,7 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 - [Crime Prediction Software Promised to Be Free of Biases. New Data Shows It Perpetuates Them](https://themarkup.org/prediction-bias/2021/12/02/crime-prediction-software-promised-to-be-free-of-biases-new-data-shows-it-perpetuates-them)
 - [Dirty Data, Bad Predictions: How Civil Rights Violations Impact Police Data, Predictive Policing Systems, and Justice](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3333423)
 - [U.N. Panel: Technology in Policing Can Reinforce Racial Bias](https://www.nytimes.com/2020/11/26/us/un-panel-technology-in-policing-can-reinforce-racial-bias.html)
+- [UNESCO adopts Recommendation on the Ethics of AI](https://algorithmwatch.org/en/unesco-adopts-recommendation-on-the-ethics-of-ai/)
 - [ How Peter Thiel’s Palantir Helped the NSA Spy on the Whole World ](https://theintercept.com/2017/02/22/how-peter-thiels-palantir-helped-the-nsa-spy-on-the-whole-world/)
 - [Europol uses Palantir](https://digit.site36.net/2020/06/11/europol-uses-palantir/)
 - [Palantir Knows Everything About You](https://www.bloomberg.com/features/2018-palantir-peter-thiel/)
@@ -153,3 +158,6 @@ Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
 ### Was tun?
 
 - [Canary in a Coal Mine: How Tech Provides Platforms for Hate](https://alistapart.com/article/canary-in-a-coal-mine-how-tech-provides-platforms-for-hate/)
+- [Activists Turn Facial Recognition Tools Against the Police](https://www.nytimes.com/2020/10/21/technology/facial-recognition-police.html)
+- [Maschinenlesbare Behörden](https://twitter.com/LilithWittmann/status/1469735820307357705)
+- [ For truly ethical AI, its research must be independent from big tech ](https://www.theguardian.com/commentisfree/2021/dec/06/google-silicon-valley-ai-timnit-gebru)
