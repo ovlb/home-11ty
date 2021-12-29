@@ -29,7 +29,7 @@ On a purely technical level, it is primarily about _Machine Learning (ML),_ or _
 In technical-academic discourse, this distinction is important. In the case of a consideration such as the one at hand, this supposed blurring also has advantages, as Kate Crawford describes in the introduction to her book <cite>Atlas of AI</cite>:
 
 > [T]he nomenclature of AI is often embraced during funding application season, when venture capitalists come bearing checkbooks, or when researchers are seeking press attention for a new scientific result. As a result, the term is both used and rejected in ways that keep its meaning in flux. For my purposes, I use AI to talk about the massive industrial formation that includes politics, labour, culture and capital. When I refer to machine learning, I'm speaking of a range of technical approaches (which are, in fact, social and infrastructural as well, although rarely spoken about as such).
-> Kate Crawford - Atlas of AI, p. 9
+> -- Kate Crawford - Atlas of AI, p. 9
 
 In this sense, this is not a text about machine learning, even though it plays a role. It is not a technical text. It is a text about the world we live in. Crawford refers to AI as a _directory of power_. As we will see below, this almost sums up the situation aptly.
 
@@ -88,7 +88,7 @@ The preliminary work of cleaning and sorting data [takes about 80% of the develo
 A process that Kate Crawford, in reference to [Potemkin villages](https://de.wikipedia.org/wiki/Potemkinsches_Dorf), calls _Potemkin AI_:
 
 > We could think of this as a kind of Potemkin AI - little more than facades, designed to demonstrate to investors and a credible media what an automated system would look like while actually relying on human labour in the background.
-> Kate Crawford - Atlas of AI, p. 65
+> -- Kate Crawford - Atlas of AI, p. 65
 
 These people provide the beautiful appearance of automatism. From the outside, it should look like everything is happening fully automatically, even though it is actually human labour.
 
