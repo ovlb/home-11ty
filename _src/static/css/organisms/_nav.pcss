@@ -16,14 +16,11 @@
   /* needed for the transform to work */
   display: inline-flex;
   height: 2ex;
+  height: var(--layout-header-height);
   position: relative;
   text-decoration: none;
   transition: transform 0.2s ease-out;
   z-index: 1;
-
-  @media (min-width: 380px) {
-    height: var(--layout-header-height);
-  }
 
   &::after {
     backface-visibility: hidden;

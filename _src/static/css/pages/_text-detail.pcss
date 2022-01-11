@@ -74,9 +74,12 @@ $bp-text-one: 777px;
   );
   clip-path: polygon(0% 0, 100% 0%, 100% 100%, 6vmin 100%);
   grid-column: aside;
-  position: sticky;
   top: var(--layout-header-height);
-  width: 100%;
+
+  @media screen and (min-width: $bp-text-one) {
+    position: sticky;
+    width: 100%;
+  }
 
   & > img {
     height: 100%;
