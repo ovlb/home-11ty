@@ -6,6 +6,7 @@ post:
   title: Computer says no
   date: '2021-12-26'
   contentIntro: Künstliche Intelligenz & Herrschaft
+  intro: 'Überlegungen zum Zusammenhang von Künstlicher Intelligenz und staatlicher und ökonomischer Herrschaft.'
 ---
 
 Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die Slides können auf Notist eingesehen werden. Eine [englische Übersetzung](/text/computer-says-no-en/) ist verfügbar.

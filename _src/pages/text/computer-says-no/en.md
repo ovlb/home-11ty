@@ -6,6 +6,7 @@ post:
   title: Computer says no
   date: '2021-12-26'
   contentIntro: Artificial Intelligence & Power
+  intro: 'Reflections on the connection between artificial intelligence and state and economic power.'
 ---
 
 This translation has been created by DeepL’s AI. How fitting. It might contain errors. The [original German text](/text/computer-says-no/) is the only proofread version.
