@@ -9,7 +9,7 @@ post:
   intro: 'Überlegungen zum Zusammenhang von Künstlicher Intelligenz und staatlicher und ökonomischer Herrschaft.'
 ---
 
-Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die Slides können auf Notist eingesehen werden. Eine [englische Übersetzung](/text/computer-says-no-en/) ist verfügbar.
+Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. Über die hier besprochenen Themen kann man Bücher schreiben, wurden Bücher geschrieben. Die [Liste meiner Quellen](/text/computer-says-no/quellen/) habe ich separat veröffentlicht. Die [Slides können auf Notist eingesehen werden](https://talks.ovl.design/wBntT5/computer-says-no-kuenstliche-intelligenz-herrschaft). Eine (automatsich erstellte) [englische Übersetzung](/text/computer-says-no-en/) ist verfügbar.
 
 ---
 

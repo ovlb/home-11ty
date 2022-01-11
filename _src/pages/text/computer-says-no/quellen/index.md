@@ -7,6 +7,7 @@ post:
   title: Computer says no
   date: '2021-12-26'
   contentIntro: Quellen
+  intro: Quellen zu meinem Text Computer says no.
 ---
 
 Quellenliste für den Artikel [Computer says no](/text/computer-says-no/).
