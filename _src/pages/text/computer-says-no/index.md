@@ -7,6 +7,15 @@ post:
   date: '2021-12-26'
   contentIntro: Künstliche Intelligenz & Herrschaft
   intro: 'Überlegungen zum Zusammenhang von Künstlicher Intelligenz und staatlicher und ökonomischer Herrschaft.'
+  openGraphImage:
+    fields:
+      file:
+        url: //images.ctfassets.net/0qq78o7muy2j/8OI9ZeDulEkDEm7AUIQsU/f0b1c85778beae2804de6ee205a67a81/ovl-og-image-csn.jpg
+  image:
+    fields:
+      description: Screenshot aus Little Britain. Eine Frau mit langem braunen Haar und Brille sitzt an einem Schreibtisch und tippt etwas in einen Computer.
+      file:
+        url: //images.ctfassets.net/0qq78o7muy2j/2VOeVQOCSzoXSRD2tDl78t/e0fa63aebfee52be1af314b6b07b6009/2112-computer-says-no-title.jpg
 ---
 
 Dieser Text ist eine Begleitung zu meinem Vortrag <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, gehalten auf der zweiten remote Chaos Experience. [Die Aufzeichnung gibt es bei media.ccc.de](https://media.ccc.de/v/rc3-2021-cbase-315-computer-says-no-kuns).
