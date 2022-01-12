@@ -65,7 +65,7 @@
     ]
   },
   "dependencies": {
-    "markdown-it": "^12.3.0",
+    "markdown-it": "^12.3.2",
     "markdown-it-abbr": "^1.0.4",
     "markdown-it-attribution": "^0.1.4",
     "markdown-it-container": "^3.0.0",
