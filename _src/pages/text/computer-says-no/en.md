@@ -11,7 +11,7 @@ post:
 
 This translation has been created by DeepL’s AI. How fitting. It might contain errors. The [original German text](/text/computer-says-no/) is the only proofread version.
 
-This text is an accompaniment to my talk <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, given at the second remote Chaos Experience. Books can be written, books have been written, about the topics discussed here. I have published the [list of my sources](/text/computer-says-no/sources/) separately. The slides can be viewed on Notist.
+This text is an accompaniment to my talk <cite>[Computer says no](https://pretalx.c3voc.de/rc3-2021-cbase/talk/X7RE9X/)</cite>, given at the second remote Chaos Experience. Books can be written, books have been written, about the topics discussed here. I have published the [list of my sources](/text/computer-says-no/quellen/) separately. The slides can be viewed on Notist.
 
 ---
 
