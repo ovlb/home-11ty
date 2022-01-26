@@ -1,0 +1,5 @@
+[[redirects]]
+  from = "https://11ty.owlish.dev/*"
+  to = "https://www.ovl.design/:splat"
+  status = 301
+  force = true
