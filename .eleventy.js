@@ -80,7 +80,6 @@ module.exports = function (config) {
     if (typeof raw === 'string') {
       return md.render(raw)
     }
-    console.log(raw)
     // return `<div class="parsed">${result}</div>`
   })
 
