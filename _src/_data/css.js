@@ -1,6 +1,7 @@
-const { compileCss } = require('../../_helper/compileCss')
+const { compileCss } = require('../../_helper/compile-css')
 
 const partials = {
+  aroundTheWeb: 'around-the-web.css',
   code: 'code.css',
   customProperties: 'custom-properties.css',
   footer: 'footer.css',

@@ -1,0 +1,27 @@
+.atw-post {
+  padding: 4vmin;
+  display: grid;
+
+  @media (min-width: 720px) {
+    grid-template-columns: 35ch 70ch;
+    gap: 2vmin;
+  }
+}
+
+.atw-post-header {
+  margin-bottom: 2vmin;
+
+  h1 {
+    font-size: var(--type-xlarge);
+  }
+}
+
+.atw-post__intro {
+  --gradient-bottom-offset: calc(100% - 0.5rem);
+  --fleuron-bottom-offset: 0.06rem;
+
+  font-style: italic;
+  margin-bottom: 2rem;
+  padding: 0 2vmin 2rem;
+  /* font-size: var(--type-medium); */
+}
