@@ -19,15 +19,14 @@
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url + 'text/' }}"/>
+  <link href="{{ metadata.url + 'text/' }}" rel="alternate"/>
   {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
   <icon>{{ iconUrl }}</icon>
   <updated>{{ articles.lastUpdated }}</updated>
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-  </author>
+    <email>{{ metadata.author.email }}</email>  </author>
   {%- for post in articles.ownPosts %}
     {% set absolutePostUrl %}{{ post.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
     <entry>
