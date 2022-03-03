@@ -15,6 +15,11 @@ const alwaysEndWithFullStop = require('./_filters/alwaysEndWithFullStop')
 /** Shortcodes */
 const metaTags = require('./_shortcodes/metaTags')
 
+const transforms = require('./_transforms')
+
+const { ELEVENTY_ENV } = process.env
+const IS_PROD = ELEVENTY_ENV === 'production'
+
 /**
  *
  *
@@ -48,6 +53,8 @@ module.exports = function (config) {
   config.addPlugin(pluginRss)
 
   config.setLibrary('md', md)
+
+  config.addLayoutAlias('digest', 'layouts/digest.njk')
 
   config.addFilter('debug', (val) => {
     console.log(val)
@@ -222,6 +229,22 @@ module.exports = function (config) {
         <a class="pagination-navigation__link ${infos.class}" href="${paginationLink}">${fullItemInformation.title}</a>
       </div>`
   })
+
+  transforms.base.forEach(({ name, transform }) => {
+    config.addTransform(name, transform)
+  })
+
+  if (!IS_PROD) {
+    transforms.dev.forEach(({ name, transform }) => {
+      config.addTransform(name, transform)
+    })
+  }
+
+  if (IS_PROD) {
+    transforms.prod.forEach(({ name, transform }) => {
+      config.addTransform(name, transform)
+    })
+  }
 
   config.addWatchTarget(`./${STATIC_FOLDERS.static}**/*`)
   config.addWatchTarget('./_helper/**/*')
