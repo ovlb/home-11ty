@@ -26,7 +26,8 @@
   <id>{{ metadata.url }}</id>
   <author>
     <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>  </author>
+    <email>{{ metadata.author.email }}</email>
+  </author>
   {%- for post in articles.ownPosts %}
     {% set absolutePostUrl %}{{ post.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
     <entry>
@@ -35,7 +36,11 @@
       <updated>{{ post.date | rssDate }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <summary type="html">{{ post.intro }}</summary>
-      <content type="html">{{ post.content | md | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+      <content type="html">
+        <![CDATA[
+        {{ post.content | md | htmlToAbsoluteUrls(absolutePostUrl) | safe }}
+      ]]>
+      </content>
     </entry>
   {%- endfor %}
 </feed>
