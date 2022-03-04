@@ -1,15 +1,21 @@
 .atw-post {
-  padding: 4vmin;
   display: grid;
+  padding: 4vmin;
 
   @media (min-width: 720px) {
-    grid-template-columns: 35ch 70ch;
     gap: 2vmin;
+    grid-template-columns: 35ch 70ch;
   }
 }
 
 .atw-post-header {
   margin-bottom: 2vmin;
+
+  @media (min-width: 720px) {
+    align-self: start;
+    position: sticky;
+    top: calc(var(--layout-header-height) + 4vmin);
+  }
 
   h1 {
     font-size: var(--type-xlarge);
