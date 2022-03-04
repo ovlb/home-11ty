@@ -33,7 +33,7 @@ module.exports = async function () {
   const ownPosts = posts.filter((post) => post.isInternal)
   const toRender = ownPosts.filter((post) => !post.noRender)
 
-  const lastUpdated = ownPosts[0].date.toISOString()
+  const lastUpdated = ownPosts[0].date
 
   return {
     posts,
