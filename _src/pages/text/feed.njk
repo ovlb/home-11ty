@@ -22,8 +22,8 @@
   <link href="{{ metadata.url + 'text/' }}" rel="alternate"/>
   {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
   <icon>{{ iconUrl }}</icon>
-  <updated>{{ articles.lastUpdated }}</updated>
-  <id>{{ metadata.url }}</id>
+  <updated>{{ articles.lastUpdated | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}text</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
@@ -33,7 +33,7 @@
     <entry>
       <title>{{ post.title }}</title>
       <link href="{{ absolutePostUrl }}"/>
-      <updated>{{ post.date | rssDate }}</updated>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
       <id>{{ absolutePostUrl }}</id>
       <summary type="html">{{ post.intro }}</summary>
       <content type="html">
