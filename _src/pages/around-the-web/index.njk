@@ -5,12 +5,17 @@ templateClass: 'tmpl-article-list'
 title: 'Around the Web'
 pageCSS: 'text'
 meta:
-  description: 'Around the web is a (weekly) digest of other people’s writing.'
+  description: 'Around the Web is a (weekly) digest of interesting links from, you might have guessed it, around the web'
 ---
 
 <main id="main" class="homepage-content" tabindex="-1">
   <header class="archive-header u-floral-heart-gradient">
     <h1 class="main-headline">{{ title }}</h1>
+    <p>
+      {{ meta.description }}
+      <br/>
+      You can follow it using the <a href="/around-the-web/feed.xml">RSS feed</a> or by subscribing to the <a href="https://buttondown.email/around-the-web">newsletter</a>.
+    </p>
   </header>
   <ol class="article-list u-global-padding" role="list">
     {%- for post in collections.aroundTheWeb %}
@@ -27,16 +32,7 @@ meta:
                 class="{{ linkClass }}"
               >{{ post.data.dateRange.start }}–{{ post.data.dateRange.end }}</a>
           </h2>
-          <p class="article-card__date ">
-            <span class="sr-only">Published: </span>
-            <time
-              datetime="{{ post.data.dates.publish }}"
-              class="type-is-aside"
-            >
-              {{ post.data.dateRange.end }}
-            </time>
-          </p>
-          <p>{{ post.data.intro | md | safe }}</p>
+          <p>{{ post.data.intro }}</p>
         </article>
       </li>
     {% endfor -%}
