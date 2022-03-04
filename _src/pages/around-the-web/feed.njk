@@ -1,0 +1,45 @@
+---json
+{
+  "permalink": "/around-the-web/feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "metadata": {
+    "title": "ovl.design » around the web",
+    "subtitle": "links from around the web",
+    "url": "https://www.ovl.design/",
+    "feedUrl": "https://www.ovl.design/around-the-web/feed.xml",
+    "author": {
+      "name": "Oscar Braunert",
+      "email": "o@ovl.design"
+    }
+  }
+}
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.subtitle }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url + 'around-the-web/' }}" rel="alternate"/>
+  {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
+  <icon>{{ iconUrl }}</icon>
+  <updated>{{ collections.aroundTheWeb | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}/around-the-web/</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+    <uri>{{ metadata.url }}</uri>
+  </author>
+  {%- for post in collections.aroundTheWeb -%}
+    {% set absolutePostUrl %}{{ post.data.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
+    <entry>
+      <title>{{ post.data.title }}</title>
+      <link href="{{ absolutePostUrl }}"/>
+      <updated>{{ post.date | dateToRfc3339 }}</updated>
+      <id>{{ absolutePostUrl }}</id>
+      <summary type="html">{{ post.data.intro }}</summary>
+      <content type="html">
+        <![CDATA[ {{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) | safe }} ]]>
+      </content>
+    </entry>
+  {%- endfor %}
+</feed>
