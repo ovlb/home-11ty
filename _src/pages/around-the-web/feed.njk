@@ -5,8 +5,6 @@
   "metadata": {
     "title": "ovl.design » around the web",
     "subtitle": "links from around the web",
-    "url": "https://www.ovl.design/",
-    "feedUrl": "https://www.ovl.design/around-the-web/feed.xml",
     "author": {
       "name": "Oscar Braunert",
       "email": "o@ovl.design"
@@ -18,19 +16,19 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.subtitle }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url + 'around-the-web/' }}" rel="alternate"/>
-  {% set iconUrl = metadata.url + 'img/favicon/favicon-32x32.png' %}
+  <link href="{{ site.baseURL + '/around-the-web/feed.xml' }}" rel="self"/>
+  <link href="{{ site.baseURL + '/around-the-web/' }}" rel="alternate"/>
+  {% set iconUrl = site.baseURL + '/img/favicon/favicon-32x32.png' %}
   <icon>{{ iconUrl }}</icon>
   <updated>{{ collections.aroundTheWeb | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}/around-the-web/</id>
+  <id>{{ site.baseURL }}/around-the-web/</id>
   <author>
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
-    <uri>{{ metadata.url }}</uri>
+    <uri>{{ site.baseURL }}</uri>
   </author>
   {%- for post in collections.aroundTheWeb -%}
-    {% set absolutePostUrl %}{{ post.data.permalink | url | absoluteUrl(metadata.url) }}{% endset %}
+    {% set absolutePostUrl %}{{ post.data.permalink | absoluteUrl(site.baseURL) }}{% endset %}
     <entry>
       <title>{{ post.data.title }}</title>
       <link href="{{ absolutePostUrl }}"/>

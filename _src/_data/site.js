@@ -7,7 +7,7 @@ module.exports = {
   description: 'code & design',
   version,
   buildTime: new Date(),
-  baseUrl: process.env.BASE_URL || 'https://11ty.owlish.dev',
+  baseURL: process.env.BASE_URL || 'https://www.ovl.design',
   navItems: [
     { url: '/', text: 'Home', exact: true },
     { url: '/code/', text: 'Code' },
