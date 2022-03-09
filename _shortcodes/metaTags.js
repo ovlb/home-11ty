@@ -8,7 +8,7 @@ const tags = [
   { attrName: 'name', attrValue: 'twitter:site', value: '@_ovlb' },
   { attrName: 'name', attrValue: 'twitter:creator', value: '@_ovlb' },
   { attrName: 'property', attrValue: 'og:type', key: 'ogType' },
-  { attrName: 'property', attrValue: 'og:image:type', value: 'image/png' },
+  { attrName: 'property', attrValue: 'og:image:type', key: 'ogImageType' },
   { attrName: 'property', attrValue: 'og:image:width', value: '1478' },
   { attrName: 'property', attrValue: 'og:image:height', value: '831' },
   { attrName: 'property', attrValue: 'og:site_name', key: 'site_name' }
@@ -22,6 +22,7 @@ module.exports = function (meta = {}, post) {
         alt: post.image?.fields.description
       }
     }
+
     meta.description = post.intro
     meta.ogType = 'article'
   }
