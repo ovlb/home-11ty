@@ -3,6 +3,18 @@ module.exports = {
   tags: ['aroundTheWeb'],
   pageCSS: 'aroundTheWeb',
   eleventyComputed: {
+    meta: function (data) {
+      return {
+        description: data.intro,
+        image: {
+          src: `${data.site.baseURL}/img/around-the-web/${data.page.fileSlug}-og.jpg`,
+          alt:
+            'A library in Prague. The ceiling is decorated with magnificent frescoes. The shelfes are old, you can smell the history contained in these books, it oozes from the picture. Written on top are the words «Around the web».'
+        },
+        ogType: 'article',
+        ogImageType: 'image/jpg'
+      }
+    },
     dateRange: function (data) {
       const parsedStart = new Date(data.dates.start)
       const parsedPublish = new Date(data.dates.publish)
