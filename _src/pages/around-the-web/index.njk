@@ -26,6 +26,7 @@ meta:
       {% set id = post.dates.publish %}
       <li>
         <article class="article-card" aria-labelledby="title-{{ id }}">
+          <p>No.&nbsp;{{post.data.page.fileSlug}}</p>
           <h2
             class="article-card__headline"
             id="title-{{ id }}"
