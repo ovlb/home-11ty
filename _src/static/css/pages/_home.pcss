@@ -1,6 +1,11 @@
 .tmpl-home {
   background-color: var(--clr-main);
   color: var(--clr-light);
+
+  & a {
+    color: currentColor;
+    outline-color: currentColor;
+  }
 }
 
 .tmpl-home__nav {
@@ -26,10 +31,6 @@
 
   & p {
     margin-bottom: 0.5em;
-  }
-
-  & a {
-    color: currentColor;
   }
 
   ::selection {
